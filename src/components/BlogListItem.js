@@ -17,7 +17,6 @@ const BlogListItem = () => {
             }
             fields {
               slug
-             
             }
             excerpt
           }
@@ -29,15 +28,15 @@ const BlogListItem = () => {
     <>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id} className={BlogListStyle.listItem}>
-          <div >
-            <Link to={node.fields.slug}>
+          <Link to={node.fields.slug}>
+            <div>
               <h2>{node.frontmatter.title}</h2>
-            </Link>
-            <h4>
-              <span>— {node.frontmatter.date}</span>
-            </h4>
-            <p>{node.excerpt}</p>
-          </div>
+              <h4>
+                <span>— {node.frontmatter.date}</span>
+              </h4>
+              <p>{node.excerpt}</p>
+            </div>
+          </Link>
         </div>
       ))}
     </>
