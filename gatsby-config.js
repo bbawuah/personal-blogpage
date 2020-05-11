@@ -4,6 +4,7 @@ module.exports = {
     title: `Brian Bawuah, CMD student &  JavaScript developer`,
     description: `I am a 23 year young CMD student and programmer, who makes things in JavaScript, Node.js and React.`,
     author: `Brian Bawuah`,
+    image: `portrait-brian-bawuah.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
