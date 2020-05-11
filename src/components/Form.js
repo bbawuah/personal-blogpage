@@ -1,5 +1,5 @@
 import React from "react"
-
+import swal from 'sweetalert';
 import FormStyles from "./Form.module.scss"
 
 const encode = data => {
@@ -43,6 +43,8 @@ class Form extends React.Component {
           subject: "",
           message: "",
         })
+
+        swal("Success!", "I would get back to you as early as possible😁", "success")
         console.log("email is send!")
       })
       .catch(error => console.log(error))
