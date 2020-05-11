@@ -1,0 +1,25 @@
+.list {
+  width: 100%;
+  margin: 1.45rem 0;
+  a {
+    text-decoration: none;
+    color: inherit;
+    .listItem {
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+      background-color: #E2E8F0;
+      transition: 0.2s ease-out;
+      p {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+        font-weight: 500;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+
+  .listItem:hover {
+    background-color: darken($color: #E2E8F0, $amount: 3%);
+  }
+}
