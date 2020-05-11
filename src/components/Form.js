@@ -9,11 +9,14 @@ const encode = data => {
 }
 
 class Form extends React.Component {
-  state = {
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    }
   }
 
   handleInputChange = event => {
@@ -27,7 +30,6 @@ class Form extends React.Component {
   }
 
   handleSubmit = e => {
-    this.clearForm()
     console.log(e.target)
     fetch("/", {
       method: "POST",
@@ -35,6 +37,12 @@ class Form extends React.Component {
       body: encode({ "form-name": "contact", ...this.state }),
     })
       .then(() => {
+        this.setState({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
         console.log("email is send!")
       })
       .catch(error => console.log(error))
