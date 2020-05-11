@@ -31,7 +31,7 @@ I spend a lot of my time investing in myself by learning new skills. Two of my h
 There are so many things wrong in our world.<strong> Nearly half the planet's population lives on less than $5.50 a day</strong>. Meanwhile the world’s 2,153 billionaires have more wealth than the 4.6 billion people who make up 60 percent of the planet’s population. This is the result of capitalism. 
 </br>
 </br>
-Our economic system highlight human greed.
+Our economic system highlights human greed.
 </br>
 </br>
 These are some of the things I want to write about! I’ll post a new article every sunday.
