@@ -26,7 +26,7 @@ I’ll go deeper in this topic in the following articles.
 I spend a lot of my time investing in myself by learning new skills. Two of my hobbies is creating digital illustrations and discovering street art. I especially love the way postmodern reaction to modernism. I love to see how people use their art to share their view on the world, with the world.
 </br>
 </p>
-<h3>Our economic system higlight human greed</h3>
+<h3>Our economic system higlights human greed</h3>
 <p>
 There are so many things wrong in our world.<strong> Nearly half the planet's population lives on less than $5.50 a day</strong>. Meanwhile the world’s 2,153 billionaires have more wealth than the 4.6 billion people who make up 60 percent of the planet’s population. This is the result of capitalism. 
 </br>
