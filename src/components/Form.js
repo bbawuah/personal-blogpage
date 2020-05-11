@@ -3,7 +3,7 @@ import React from "react"
 import FormStyles from "./Form.module.scss"
 
 const Form = () => (
-  <form method="post" netlify-honeypot="bot-field" data-netlify="true" className={FormStyles.form}>
+  <form method="POST" name="contact" netlify-honeypot="bot-field" data-netlify="true" className={FormStyles.form}>
     <label>
       Name
       <input type="text" name="name" id="name" required />
