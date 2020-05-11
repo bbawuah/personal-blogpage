@@ -14,18 +14,18 @@ According to Foucault, our time is all about far-reaching control over people. H
 </p>
 <h3>The power of fear</h3>
 <p>
-The corona virus has turned the world upside down. That world we know will no longer be the same. To stop the pandemic, entire populations must adhere to certain restrictions.
+The corona virus has turned the world upside down. The world as we knew it will no longer be the same. To stop the pandemic, entire populations must adhere to certain restrictions.
 </br>
 </br>
-Many governments choose to monitor their society and punish those who break their restrictions. Technology has made it possible for the first time in history to control such entire populations. 
+Many governments have chosen to monitor their society and punish those who break their restrictions. Technology has made it possible for the first time in history to control entire populations.
 </br>
 </br>
-The coronavirus and the associated restrictions have opened my eyes and also made me think to what extent we have the freedom to give our own twist to our lives?
+The coronavirus and the associated restrictions have opened my eyes and also made me consider to what extent we have the freedom to give our own twist to our lives?
 </br>
 </p>
 <h3>A demarcated playground</h3>
 <p>
-I compare our lives with children playing at a playground. The children have a slide that they can play with, a sandbox, a football which they can play many games with. But the playground is also demarcated with fences. The children are not allowed to play outside these gates.
+I like to compare our lives with children playing at a playground. The children have a slide that they can play on, a sandbox, a football which they can play many games with. But the playground is also demarcated with fences. The children are not allowed to play outside these gates.
 </br>
 </br>
 Are these children really free beings? Or are they just trying to make the best of their lives despite the restriction?
@@ -34,10 +34,10 @@ Are these children really free beings? Or are they just trying to make the best 
 You could say that the fences of the playground are placed out of safety measures. 
 </br>
 </br>
-However, I believe that these fences have been placed to give direction and shape to the child. 
+However, I believe that these fences have been placed to give direction to the children and to shape the children. 
 </br>
 </br>
-In addition, an environment that these children haven’t been or have no knowledge of, They cannot label as a dangerous area.
+Also, an environment that these children haven’t been to or have no knowledge of cannot be labeled as a dangerous area.
 </br>
 </p>
 <h3>Conclusion</h3>
@@ -48,5 +48,5 @@ I believe that power groups have placed restrictions on our lives to shape our m
 But this is the reality.
 </br>
 </br>
-We must ask ourselves to what extent we are free creatures?..
+We must ask ourselves to what extent are we truly free beings?
 </p>
