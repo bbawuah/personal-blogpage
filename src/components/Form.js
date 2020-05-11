@@ -53,10 +53,7 @@ class Form extends React.Component {
   render() {
     return (
       <form
-        method="POST"
         name="contact"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
         className={FormStyles.form}
         onSubmit={this.handleSubmit}
       >
