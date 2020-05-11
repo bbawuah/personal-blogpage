@@ -23,7 +23,7 @@ I’ll go deeper in this topic in the following articles.
 </br>
 </p>
 <h3>Postmodernism</h3>
-I spend a lot of my time investing in myself by learning new skills. Two of my hobbies is creating digital illustrations and discovering street art. I especially love the way postmodern reaction to modernism. I love to see how people use their art to share their view on the world, with the world.
+I spend a lot of my time investing in myself by learning new skills. Two of my hobbies is creating digital illustrations and discovering street art. I especially love postmodern reactions to modernism. I love to see how people use their art to share their view on the world, with the world.
 </br>
 </p>
 <h3>Our economic system higlights human greed</h3>
