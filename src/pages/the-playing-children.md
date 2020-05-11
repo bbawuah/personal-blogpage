@@ -11,7 +11,6 @@ But to what extent can we "shape our lives" in our society?
 <p>
 According to Foucault, our time is all about far-reaching control over people. He compares this model with the panopticon. And nothing could be further from the truth today.
 </br>
-</br>
 </p>
 <h3>The power of fear</h3>
 <p>
@@ -22,7 +21,6 @@ Many governments choose to monitor their society and punish those who break thei
 </br>
 </br>
 The coronavirus and the associated restrictions have opened my eyes and also made me think to what extent we have the freedom to give our own twist to our lives?
-</br>
 </br>
 </p>
 <h3>A demarcated playground</h3>
@@ -40,7 +38,6 @@ However, I believe that these fences have been placed to give direction and shap
 </br>
 </br>
 In addition, an environment that these children haven’t been or have no knowledge of, They cannot label as a dangerous area.
-</br>
 </br>
 </p>
 <h3>Conclusion</h3>
