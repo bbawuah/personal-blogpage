@@ -25,7 +25,7 @@ The coronavirus and the associated restrictions have opened my eyes and also mad
 </br>
 </br>
 </p>
-<h3>a demarcated playground</h3>
+<h3>A demarcated playground</h3>
 <p>
 I compare our lives with children playing at a playground. The children have a slide that they can play with, a sandbox, a football which they can play many games with. But the playground is also demarcated with fences. The children are not allowed to play outside these gates.
 </br>
