@@ -663,3 +663,20 @@ header {
 .description {
   font-size: 1.2222rem;
 }
+
+footer{
+  
+  ul{
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 0;
+    justify-content: space-between;
+    width: 5rem;
+    list-style: none;
+    
+    svg {
+      width: 1.4rem;
+      color: #1a202c;
+    }
+  }
+}
