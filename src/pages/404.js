@@ -9,11 +9,11 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
     <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     <Blockquote
-    quote={'Hier komt een hele inspirerende quote'}
-    auth={'Hier komt de naam van de auteur'}
+    quote={"There's no use running if you're on the wrong road."}
+    auth={'Warren Buffett'}
     />
+    <p>Go back.</p>
   </Layout>
 )
 
