@@ -24,9 +24,9 @@ class Form extends React.Component {
     const value = target.value
     const name = target.name
 
-    this.setState({
+    this.setState(() => ({
       [name]: value,
-    })
+    }))
   }
 
   handleSubmit = e => {
@@ -37,12 +37,12 @@ class Form extends React.Component {
       body: encode({ "form-name": "contact", ...this.state }),
     })
       .then(() => {
-        this.setState({
+        this.setState(() => ({
           name: "",
           email: "",
           subject: "",
           message: "",
-        })
+        }))
 
         swal("Success!", "I would get back to you as early as possible😁", "success")
         console.log("email is send!")
