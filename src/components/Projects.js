@@ -7,6 +7,11 @@ const Projects = () => (
   <div className={projectsListStyle.list}>
     <h4>Some of my projects</h4>
     <ProjectListItem 
+    url={"https://www.tasksy.work/"}
+    cls={projectsListStyle.listItem}
+    title={'Tasksy - A task management tool for achievers'}
+    desc={'Fullstack taskmanagement webapplication'}/>
+    <ProjectListItem 
     url={"https://hope-foundation.faith/"}
     cls={projectsListStyle.listItem}
     title={'H.O.P.E. Foundation'}
