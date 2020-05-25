@@ -22,6 +22,11 @@ const Projects = () => (
     title={'Chat app'}
     desc={'Real time webapplication where users are able to chat to one another using the Socket library.'}/> 
      <ProjectListItem 
+    url={"https://www.adventhymnal.com/"}
+    cls={projectsListStyle.listItem}
+    title={'Advent Hymnal'}
+    desc={'Web application for hymnals in Twi and English'}/>
+     <ProjectListItem 
     url={"https://bawuah-weather-application.herokuapp.com/"}
     cls={projectsListStyle.listItem}
     title={'Weather app'}
