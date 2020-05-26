@@ -55,7 +55,11 @@ Pro Publica is a non-profit organization that investigates criminal risk scores.
 </p>
 
 <p>
-The COMPAS algorithm had an accuracy of 60%, which is a little bit more than the flip of a coin..🤷🏿‍♂️ But what really stood out was that when the prediction was wrong, it was predicted twice as often that a dark man would relapse when this was not the case and twice as often predicted that a white man would not relapse when it was.
+The COMPAS algorithm had an accuracy of 60%, which is a little bit more than the flip of a coin..🤷🏿‍♂️ 
+</p>
+
+<p>
+But what really stood out was that when the prediction was wrong, it was predicted twice as often that a dark man would relapse when this was not the case and twice as often predicted that a white man would not relapse when it was.
 </p>
 
 <p>
