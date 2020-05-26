@@ -67,7 +67,7 @@ These algorithms are built by a group of people who have their own view of the w
 </p>
 
 <p>
-Algorithms can make our lives easier by predicting the future in different areas.
+Algorithms can make our lives easier by predicting the future in other areas.
 </p>
 
 <p>
