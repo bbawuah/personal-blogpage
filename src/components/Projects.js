@@ -10,7 +10,7 @@ const Projects = () => (
     url={"https://www.tasksy.work/"}
     cls={projectsListStyle.listItem}
     title={'Tasksy - A task management tool for achievers'}
-    desc={'Fullstack taskmanagement webapplication'}/>
+    desc={'Fullstack taskmanagement web application'}/>
     <ProjectListItem 
     url={"https://hope-foundation.faith/"}
     cls={projectsListStyle.listItem}
@@ -20,7 +20,7 @@ const Projects = () => (
     url={"https://bawuah-chatapp.herokuapp.com/"}
     cls={projectsListStyle.listItem}
     title={'Chat app'}
-    desc={'Real time webapplication where users are able to chat to one another using the Socket library.'}/> 
+    desc={'Real time web application where users are able to chat to one another using the Socket library.'}/> 
      <ProjectListItem 
     url={"https://www.adventhymnal.com/"}
     cls={projectsListStyle.listItem}
