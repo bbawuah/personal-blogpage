@@ -3,7 +3,7 @@ title: "What are the odds?"
 date: "2020-05-26"
 ---
 
-A Lot of sectors and government agencies use algorithms to calculate a future scenario.
+A lot of sectors and government agencies use algorithms to calculate a future scenario.
 
 But to what extent do we let algorithms run their course?
 
@@ -12,7 +12,7 @@ But to what extent do we let algorithms run their course?
 To predict the future, an algorithm needs a list of past events (data). Without data, an algorithm is useless.
 </p>
 <p>
-Fortunately (or not..),  we live in a time where it rains data. About 500 million tweets are posted on Twitter every day and about 65 billion messages are sent via Whatsapp. For example, this data is used by companies to get to know us better and to offer us the content <strong>they think</strong> we want to see. They make predictions based on the past.
+Fortunately (or not..),  we live in a time where it rains data. About 500 million tweets are posted on Twitter every day and about 65 billion messages are sent via Whatsapp. This data is used by companies to get to know us better and to offer us the content <strong>they think</strong> we want to see. They make predictions based on the past.
 </p>
 <p>
 Companies give us personalized ads because of this and I have to admit, that I like that. I no longer have to search for a new laptop for hours, but I get the best deal in my timeline on social media.
@@ -40,10 +40,15 @@ Nothing and nobody has the right to gamble with the freedom of another.
 </p>
 
 <p>
-Reintegration of detainees should be determined by showing good behavior. Algorithms only look at statistics and sometimes our statistics say nothing about our future.
+Reintegration of detainees should be determined by showing good behavior. Algorithms only look at statistics, and sometimes our statistics say nothing about our future.
 </p>
 
-<blockquote><em>I believe in Jesus Christ and I believe that anyone can turn their lives around at any time.</em></blockquote>
+<p>
+The bible tells us in 2 Corinthians 5:17 that if anyone is in Christ, he is a new creation. <em>The old things has passed away.</em> 
+</p>
+
+<blockquote><em>I believe that anyone can turn their lives around at any time through Jesus Christ.</em></blockquote>
+
 <h3>Algorithms are bias, because we are</h3>
 <p>
 Pro Publica is a non-profit organization that investigates criminal risk scores. According to investigative journalist Julia Angwin, Pro Publica has reviewed the scores of 18,000 people over two years in a Florida jurisdiction. They checked whether the predictions were actually correct.
