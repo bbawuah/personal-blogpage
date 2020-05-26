@@ -63,7 +63,7 @@ But what really stood out was that when the prediction was wrong, it was predict
 </p>
 
 <p>
-These algorithms are built by a group of people who have their own view of the world. Their bias is built-in in the algorithm.
+These algorithms are built by a group of people who have their own view of the world. Their bias is built-in the algorithm.
 </p>
 
 <p>
