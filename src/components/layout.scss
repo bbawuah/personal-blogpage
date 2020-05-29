@@ -621,11 +621,17 @@ pre tt:after {
   }
 }
 
+// EIGEN CODE
 .container {
   margin: 0 auto;
   padding: 3rem 0;
   max-width: 650px;
   padding: 0 1rem;
+}
+
+body{
+  background-color: #222;
+  color: #EDF2F7;
 }
 
 header {
@@ -653,7 +659,7 @@ header {
         transition: .150s ease-out;
       }
       li:hover {
-        border-left: 4px solid black;
+        border-left: 4px solid #EDF2F7;
         padding-left: 0.125rem;
       }
     }
@@ -676,7 +682,7 @@ footer{
     
     svg {
       width: 1.4rem;
-      color: #1a202c;
+      color: #EDF2F7;
     }
   }
 }

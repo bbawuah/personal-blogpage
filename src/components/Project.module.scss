@@ -8,7 +8,7 @@
       margin: 1rem 0;
       padding: 1rem;
       border-radius: 5px;
-      background-color: #E2E8F0;
+      background-color: #555;
       transition: 0.2s ease-out;
       p {
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -20,6 +20,6 @@
   }
 
   .listItem:hover {
-    background-color: darken($color: #E2E8F0, $amount: 3%);
+    background-color: darken($color: #555, $amount: 3%);
   }
 }

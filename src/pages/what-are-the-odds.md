@@ -79,26 +79,26 @@ But when it comes to decision-making about human freedom, we can't bet.
 <ul>
 <li>
 <p>Verslaafd aan het algoritme <em>VPRO Tegenlicht. (2018, 9 augustus). Geraadpleegd op 12 mei 2020</em>
-<a href="https://www.vpro.nl/programmas/tegenlicht/speel%7EVPWON_1293329%7Everslaafd-aan-het-algoritme-vpro-tegenlicht%7E.html">https://www.vpro.nl/programmas/tegenlicht/speel%7EVPWON_1293329%7Everslaafd-aan-het-algoritme-vpro-tegenlicht%7E.html</a>
+<a style="color: #B794F4;" href="https://www.vpro.nl/programmas/tegenlicht/speel%7EVPWON_1293329%7Everslaafd-aan-het-algoritme-vpro-tegenlicht%7E.html">https://www.vpro.nl/programmas/tegenlicht/speel%7EVPWON_1293329%7Everslaafd-aan-het-algoritme-vpro-tegenlicht%7E.html</a>
 </p>
 </li>
 
 <li>
 <p>Julia Angwin (ProPublica). (z.d.). <em>Practitioners-Guide-to-COMPAS-Core. Geraadpleegd op 12 mei 2020</em>
-<a href="https://www.documentcloud.org/documents/2840784-Practitioner-s-Guide-to-COMPAS-Core.html#document/p30/a296482">https://www.documentcloud.org/documents/2840784-Practitioner-s-Guide-to-COMPAS-Core.html#document/p30/a296482</a>
+<a style="color: #B794F4;" href="https://www.documentcloud.org/documents/2840784-Practitioner-s-Guide-to-COMPAS-Core.html#document/p30/a296482">https://www.documentcloud.org/documents/2840784-Practitioner-s-Guide-to-COMPAS-Core.html#document/p30/a296482</a>
 </p>
 </li>
 
 <li>
 <p>Desjardins, J. (2019, 19 april). <em>How Much Data is Generated Each Day? Geraadpleegd op 12 mei 2020</em>
-<a href="https://www.visualcapitalist.com/how-much-data-is-generated-each-day/">https://www.visualcapitalist.com/how-much-data-is-generated-each-day/</a>
+<a style="color: #B794F4;" href="https://www.visualcapitalist.com/how-much-data-is-generated-each-day/">https://www.visualcapitalist.com/how-much-data-is-generated-each-day/</a>
 </p>
 </li>
 
 
 <li>
 <p>ProPublica. (2020, 29 februari). <em>Machine Bias. Geraadpleegd op 12 mei 2020</em>
-<a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</a>
+<a style="color: #B794F4;" href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</a>
 </p>
 </li>
 </ul>
