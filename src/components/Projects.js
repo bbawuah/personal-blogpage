@@ -10,7 +10,7 @@ const Projects = () => (
     url={"https://www.tasksy.work/"}
     cls={projectsListStyle.listItem}
     title={'Tasksy - A task management tool for achievers'}
-    desc={'Fullstack taskmanagement web application with user authentication.'}/>
+    desc={'Fullstack taskmanagement web application.'}/>
     <ProjectListItem 
     url={"https://hope-foundation.faith/"}
     cls={projectsListStyle.listItem}
