@@ -10,7 +10,7 @@ const Projects = () => (
     url={"https://www.tasksy.work/"}
     cls={projectsListStyle.listItem}
     title={'Tasksy - A task management tool for achievers'}
-    desc={'Fullstack taskmanagement web application'}/>
+    desc={'Fullstack taskmanagement web application with user authentication.'}/>
     <ProjectListItem 
     url={"https://hope-foundation.faith/"}
     cls={projectsListStyle.listItem}
@@ -25,7 +25,7 @@ const Projects = () => (
     url={"https://www.adventhymnal.com/"}
     cls={projectsListStyle.listItem}
     title={'Advent Hymnal'}
-    desc={'Web application for hymnals in Twi and English'}/>
+    desc={'Web application for hymnals in Twi and English.'}/>
      <ProjectListItem 
     url={"https://bawuah-weather-application.herokuapp.com/"}
     cls={projectsListStyle.listItem}
