@@ -71,7 +71,7 @@ Algorithms can make our lives easier by predicting the future in other areas.
 </p>
 
 <p>
-But when it comes to decision-making about human freedom, we can't bet.
+But when it comes to human freedom, we can't let an algorithm do the decision-making.
 </p>
 
 <h3>References</h3>
