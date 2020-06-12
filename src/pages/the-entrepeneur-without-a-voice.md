@@ -3,12 +3,15 @@ title: "The entrepeneur without a voice.."
 date: "2020-06-12"
 ---
 
-Our economy is constantly changing. Millennials are increasingly looking for flexible work and startups such as Temper, Uber and Deliveroo are responding well to this. These startups promise a future where everyone is an entrepreneur. But is this really true? Or do they only sell a dream?
+Our economy is constantly changing. Millennials are increasingly looking for flexible work and startups such as Temper, Uber and Deliveroo are responding well to this. 
+
+
+These startups promise a future where everyone is an entrepreneur. But is this really true? Or do they only sell a dream?
 
 
 <h3>The headstrong millenial</h3>
 <blockquote>
-<em>“Millennials increasingly feel the need to decide where, for what and for whom they want to work. This is what we as a company respond well to. ” </em> - Paul Eggink, founder Temper
+<em>“Millennials increasingly feel the need to decide where, for what and for whom they want to work. This is what we as a company respond well to. ” </em> - Paul Eggink, CEO Temper.
 </blockquote>
 
 <p>
