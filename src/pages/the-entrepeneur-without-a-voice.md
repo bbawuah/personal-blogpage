@@ -20,7 +20,7 @@ Hourly rates on these platforms are often higher than a standard hourly rate in 
 
 <h3>The entrepeneur without a voice</h3>
 <p>
-To get started in the click-and-do economy, you must register with the Chamber of Commerce as an independent entrepreneur. From this moment on, you will work as a company / freelancer for your employer.
+To get started in the click and job economy, you must register with the Chamber of Commerce as an independent entrepreneur. From this moment on, you will work as a company / freelancer for your employer.
 </p>
 
 <p>
