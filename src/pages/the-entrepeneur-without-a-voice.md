@@ -53,7 +53,7 @@ The click and job economy has a lot of potential and offers and responds well to
 </p>
 
 <p>
-The problem is that these companies put their employees away as freelancers and put them in an inhumane position.
+The problem is that these companies put their employees away as freelancers and put them in an inhuman position.
 </p>
 
 <strong>This needs to change.</strong>
