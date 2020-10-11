@@ -1,48 +1,69 @@
-import React from "react"
+import React, { useState } from "react"
 import swal from 'sweetalert';
 import FormStyles from "./Form.module.scss"
 
-const encode = data => {
+const encode = (data: any) => {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&")
 }
 
-class Form extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
+export const Form: React.FC = () => {
+  const [name, setName] = useState<string>()
+  const [email, setEmail] = useState<string>()
+  const [subject, setSubject] = useState<string>()
+  const [message, setMessage] = useState<string>()
+
+  const formData = {
+    name,
+    email,
+    subject,
+    message
+  }
+
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     name: "",
+  //     email: "",
+  //     subject: "",
+  //     message: "",
+  //   }
+  // }
+
+  function handleInputChange(event: any) {
+    const target = event.name
+    const value = target.value
+
+    switch(target){
+      case 'name':
+        setName(value)
+        break
+      case 'email':
+        setEmail(value)
+        break;
+      case 'subject':
+        setSubject(value)
+        break
+      case 'message':
+        setMessage(value)
+        break
     }
   }
 
-  handleInputChange = event => {
-    const target = event.target
-    const value = target.value
-    const name = target.name
-
-    this.setState(() => ({
-      [name]: value,
-    }))
-  }
-
-  handleSubmit = e => {
+  function handleSubmit(e: any) {
     console.log(e.target)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
+      body: encode({ "form-name": "contact", ...formData }),
     })
       .then(() => {
-        this.setState(() => ({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        }))
+    
+        setName('')
+        setEmail('')
+        setSubject('')
+        setMessage('')
 
         swal("Success!", "I would get back to you as early as possible😁", "success")
         console.log("email is send!")
@@ -52,12 +73,11 @@ class Form extends React.Component {
     e.preventDefault()
   }
 
-  render() {
     return (
       <form
         name="contact"
         className={FormStyles.form}
-        onSubmit={this.handleSubmit}
+        onSubmit={handleSubmit}
       >
         <label>
           Name
@@ -66,8 +86,8 @@ class Form extends React.Component {
             name="name"
             id="name"
             required
-            onChange={this.handleInputChange}
-            value={this.state.name}
+            onChange={handleInputChange}
+            value={name}
           />
         </label>
         <label>
@@ -77,8 +97,8 @@ class Form extends React.Component {
             name="email"
             id="email"
             required
-            onChange={this.handleInputChange}
-            value={this.state.email}
+            onChange={handleInputChange}
+            value={email}
           />
         </label>
         <label>
@@ -87,8 +107,8 @@ class Form extends React.Component {
             type="text"
             name="subject"
             id="subject"
-            onChange={this.handleInputChange}
-            value={this.state.subject}
+            onChange={handleInputChange}
+            value={subject}
           />
         </label>
         <label>
@@ -96,10 +116,10 @@ class Form extends React.Component {
           <textarea
             name="message"
             id="message"
-            rows="5"
+            rows={5}
             required
-            onChange={this.handleInputChange}
-            value={this.state.message}
+            onChange={handleInputChange}
+            value={message}
           />
         </label>
         <div>
@@ -107,7 +127,4 @@ class Form extends React.Component {
         </div>
       </form>
     )
-  }
 }
-
-export default Form

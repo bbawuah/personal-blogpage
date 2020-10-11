@@ -1,11 +1,13 @@
 import React from "react";
 import {useStaticQuery, graphql} from "gatsby";
+import * as BlogListStyle from "./blogList.module.scss"
+import BlogListItem from "./BlogListItem";
 
-import BlogListStyle from "./BlogList.module.scss"
+interface Props {
+data: any
+}
 
-import BlogListItem from "../components/BlogListItem"
-
-const BlogList = () => {
+export const BlogList: React.FC<Props> = () => {
   const data = useStaticQuery(graphql`
     query PostCountQuery {
       allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -21,5 +23,3 @@ const BlogList = () => {
     </div>
   )
 }
-
-export default BlogList

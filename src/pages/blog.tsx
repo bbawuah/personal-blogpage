@@ -1,12 +1,17 @@
 import React from "react";
 import Layout from "../components/Layout";
-import SEO from "../components/seo";
 import {graphql} from "gatsby";
+import { SEO } from "../components/seo";
+import { Blockquote } from "../components/Blockquote";
+import { BlogList } from "../components/BlogList";
 
-import Blockquote from "../components/Blockquote";
-import BlogList from "../components/BlogList";
+interface Props {
+  data: {
+    allMarkdownRemark: any
+  }
+}
 
-const BlogPage = ({data}) => (
+const BlogPage: React.FC<Props> = ({data}) => (
   <Layout>
     <SEO title="Blog" />
     <h1>Find out what keeps me busy.</h1>
@@ -14,8 +19,7 @@ const BlogPage = ({data}) => (
     quote={'"I write to discover what I know."'}
     auth={"Flannery O'Connor"}
     />
-    <BlogList data={data}/>
-
+    <BlogList data={data.allMarkdownRemark}/>
   </Layout>
 )
 
@@ -37,4 +41,4 @@ export const query = graphql`
   }
 `
 
-export default BlogPage;
+export default BlogPage

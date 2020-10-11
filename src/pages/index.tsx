@@ -1,12 +1,21 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import { Blockquote } from "../components/Blockquote"
+import { Projects } from "../components/Projects"
+import { SEO } from "../components/seo"
 
-import Blockquote from "../components/Blockquote"
-import Projects from "../components/Projects"
+interface Props {
+  data: { site: {
+    siteMetadata: {
+      description: string
+      author: string
+    }
+  }
+}
+}
 
-const IndexPage = ({ data }) => (
+const IndexPage: React.FC<Props> = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi, I'm {data.site.siteMetadata.author}.</h1>
@@ -32,5 +41,4 @@ export const query = graphql`
     }
   }
 `
-
 export default IndexPage

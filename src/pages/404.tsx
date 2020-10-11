@@ -1,11 +1,9 @@
 import React from "react"
-
+import { Blockquote } from "../components/Blockquote"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import { SEO } from "../components/seo"
 
-import Blockquote from "../components/Blockquote";
-
-const NotFoundPage = () => (
+const NotFoundPage: React.FC = () => (
   <Layout>
     <SEO title="404: Not found" />
     <h1>NOT FOUND</h1>

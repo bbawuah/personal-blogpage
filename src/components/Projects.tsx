@@ -1,9 +1,8 @@
 import React from "react"
-
-import ProjectListItem from "./ProjectListItem";
 import projectsListStyle from './Project.module.scss'
+import { ProjectListItem } from "./ProjectListItem"
 
-const Projects = () => (
+export const Projects: React.FC = () => (
   <div className={projectsListStyle.list}>
     <h4>Some of my projects</h4>
     <ProjectListItem 
@@ -28,5 +27,3 @@ const Projects = () => (
     desc={'App that renders chapters and/or verses from the American Standard Version of the Bible.'}/>
   </div>
 )
-
-export default Projects

@@ -1,12 +1,10 @@
 import React from "react"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
-import Form from "../components/Form";
+import { SEO } from "../components/seo";
+import { Blockquote } from "../components/Blockquote";
+import { Form } from "../components/Form";
 
-import Blockquote from "../components/Blockquote"
-
-
-const ContactPage = () => (
+const ContactPage: React.FC = () => (
   <Layout>
     <SEO title="Contact" />
     <h1>Let's get in contact!</h1>
@@ -16,7 +14,6 @@ const ContactPage = () => (
       }
       auth={"Yo Gotti"}
     />
-
     <Form/>
   </Layout>
 )

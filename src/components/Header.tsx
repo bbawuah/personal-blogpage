@@ -1,10 +1,13 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Header = () => {
+interface Props {
+  siteTitle: string
+}
+
+export const Header: React.FC<Props> = () => {
   const data = useStaticQuery(graphql`
     query {
       headerImage: file(relativePath: { eq: "images/portrait-brian-bawuah.jpg" }) {
@@ -43,13 +46,3 @@ const Header = () => {
     </header>
   )
 }
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

@@ -6,14 +6,16 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "normalize.css"
-
-import Header from "./Header"
 import "./layout.scss"
+import { Header } from "./Header"
 
-const Layout = ({ children }) => {
+interface Props {
+  children: JSX.Element[] | JSX.Element
+}
+
+export const Layout: React.FC<Props> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -114,8 +116,5 @@ const Layout = ({ children }) => {
   )
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
 
 export default Layout

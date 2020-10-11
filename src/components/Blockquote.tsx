@@ -1,7 +1,12 @@
 import React from "react"
-import blockquoteStyles from "./Blockquote.module.scss"
+import * as blockquoteStyles from "./blockquote.module.scss"
 
-const Blockquote = ({quote, auth}) => (
+interface Props {
+  quote: string
+  auth: string
+}
+
+export const Blockquote: React.FC<Props> = ({quote, auth}) => (
   <div>
     <div className={blockquoteStyles.container}>
       <blockquote>
@@ -11,5 +16,3 @@ const Blockquote = ({quote, auth}) => (
 <small className={blockquoteStyles.auth}>{auth}</small>
   </div>
 )
-
-export default Blockquote
