@@ -21,16 +21,6 @@ export const Form: React.FC = () => {
     message
   }
 
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     name: "",
-  //     email: "",
-  //     subject: "",
-  //     message: "",
-  //   }
-  // }
-
   function handleInputChange(event: any) {
     const target = event.name
     const value = target.value
@@ -52,7 +42,6 @@ export const Form: React.FC = () => {
   }
 
   function handleSubmit(e: any) {
-    console.log(e.target)
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -69,7 +58,6 @@ export const Form: React.FC = () => {
           'I would get back to you as early as possible😁',
           'success'
         )
-        console.log('email is send!')
       })
       .catch((error) => console.log(error))
 
@@ -84,7 +72,7 @@ export const Form: React.FC = () => {
           type="text"
           name="name"
           id="name"
-          required
+          required={true}
           onChange={handleInputChange}
           value={name}
         />
@@ -95,7 +83,7 @@ export const Form: React.FC = () => {
           type="email"
           name="email"
           id="email"
-          required
+          required={true}
           onChange={handleInputChange}
           value={email}
         />
@@ -116,7 +104,7 @@ export const Form: React.FC = () => {
           name="message"
           id="message"
           rows={5}
-          required
+          required={true}
           onChange={handleInputChange}
           value={message}
         />
