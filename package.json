@@ -27,6 +27,7 @@
     "react-helmet": "^6.0.0",
     "react-typography": "^0.16.19",
     "sweetalert": "^2.1.2",
+    "tslint-config-standard": "^9.0.0",
     "typography": "^0.16.19"
   },
   "devDependencies": {

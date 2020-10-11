@@ -1,11 +1,11 @@
-import React, { useState } from "react"
-import swal from 'sweetalert';
-import FormStyles from "./Form.module.scss"
+import React, { useState } from 'react'
+import swal from 'sweetalert'
+import FormStyles from './Form.module.scss'
 
 const encode = (data: any) => {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&')
 }
 
 export const Form: React.FC = () => {
@@ -35,13 +35,13 @@ export const Form: React.FC = () => {
     const target = event.name
     const value = target.value
 
-    switch(target){
+    switch (target) {
       case 'name':
         setName(value)
         break
       case 'email':
         setEmail(value)
-        break;
+        break
       case 'subject':
         setSubject(value)
         break
@@ -53,78 +53,77 @@ export const Form: React.FC = () => {
 
   function handleSubmit(e: any) {
     console.log(e.target)
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formData }),
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', ...formData })
     })
       .then(() => {
-    
         setName('')
         setEmail('')
         setSubject('')
         setMessage('')
 
-        swal("Success!", "I would get back to you as early as possible😁", "success")
-        console.log("email is send!")
+        swal(
+          'Success!',
+          'I would get back to you as early as possible😁',
+          'success'
+        )
+        console.log('email is send!')
       })
-      .catch(error => console.log(error))
+      .catch((error) => console.log(error))
 
     e.preventDefault()
   }
 
-    return (
-      <form
-        name="contact"
-        className={FormStyles.form}
-        onSubmit={handleSubmit}
-      >
-        <label>
-          Name
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            onChange={handleInputChange}
-            value={name}
-          />
-        </label>
-        <label>
-          Email
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            onChange={handleInputChange}
-            value={email}
-          />
-        </label>
-        <label>
-          Subject
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            onChange={handleInputChange}
-            value={subject}
-          />
-        </label>
-        <label>
-          Message
-          <textarea
-            name="message"
-            id="message"
-            rows={5}
-            required
-            onChange={handleInputChange}
-            value={message}
-          />
-        </label>
-        <div>
-          <button type="submit">Send</button>
-        </div>
-      </form>
-    )
+  return (
+    <form name="contact" className={FormStyles.form} onSubmit={handleSubmit}>
+      <label>
+        Name
+        <input
+          type="text"
+          name="name"
+          id="name"
+          required
+          onChange={handleInputChange}
+          value={name}
+        />
+      </label>
+      <label>
+        Email
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          onChange={handleInputChange}
+          value={email}
+        />
+      </label>
+      <label>
+        Subject
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          onChange={handleInputChange}
+          value={subject}
+        />
+      </label>
+      <label>
+        Message
+        <textarea
+          name="message"
+          id="message"
+          rows={5}
+          required
+          onChange={handleInputChange}
+          value={message}
+        />
+      </label>
+      <div>
+        <button type="submit">Send</button>
+      </div>
+    </form>
+  )
 }

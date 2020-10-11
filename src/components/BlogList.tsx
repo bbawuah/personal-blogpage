@@ -1,10 +1,10 @@
-import React from "react";
-import {useStaticQuery, graphql} from "gatsby";
-import * as BlogListStyle from "./blogList.module.scss"
-import BlogListItem from "./BlogListItem";
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import * as BlogListStyle from './blogList.module.scss'
+import BlogListItem from './BlogListItem'
 
 interface Props {
-data: any
+  data: any
 }
 
 export const BlogList: React.FC<Props> = () => {

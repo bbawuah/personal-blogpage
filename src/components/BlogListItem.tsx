@@ -1,6 +1,6 @@
-import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
-import * as BlogListStyle from "./blogList.module.scss"
+import React from 'react'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import * as BlogListStyle from './blogList.module.scss'
 
 interface Props {
   allMarkdownRemark: {

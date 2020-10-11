@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 interface Props {
   url: string
@@ -15,4 +15,3 @@ export const ProjectListItem: React.FC<Props> = ({ url, cls, title, desc }) => (
     </div>
   </a>
 )
-

@@ -5,9 +5,9 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
 interface Props {
   readonly description?: string
@@ -16,8 +16,13 @@ interface Props {
   readonly title: string
 }
 
-export const SEO: React.FC<Props> = ({ description, lang = 'en', meta = [], title }) => {
-  const {site} = useStaticQuery(
+export const SEO: React.FC<Props> = ({
+  description,
+  lang = 'en',
+  meta = [],
+  title
+}) => {
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {
@@ -37,52 +42,51 @@ export const SEO: React.FC<Props> = ({ description, lang = 'en', meta = [], titl
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        lang
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:title`,
-          content: title,
-        }, 
+          content: title
+        },
         {
           property: `og:image`,
-          content: site.siteMetadata.image,
+          content: site.siteMetadata.image
         },
         {
           name: `twitter:image`,
-          content: site.siteMetadata.image,
+          content: site.siteMetadata.image
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: metaDescription
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `website`
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary`
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: site.siteMetadata.author
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: title
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
-        },
-        
+          content: metaDescription
+        }
       ].concat(meta)}
     />
   )
