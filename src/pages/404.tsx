@@ -1,5 +1,5 @@
 import React from 'react'
-import { Blockquote } from '../components/Blockquote'
+import { Blockquote } from '../components/Blockquote/Blockquote'
 import Layout from '../components/Layout'
 import { SEO } from '../components/seo'
 
