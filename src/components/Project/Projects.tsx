@@ -1,6 +1,6 @@
 import React from 'react'
+import { ProjectListItem } from '../ProjectListItem/ProjectListItem'
 import projectsListStyle from './Project.module.scss'
-import { ProjectListItem } from './ProjectListItem'
 
 export const Projects: React.FC = () => (
   <div className={projectsListStyle.list}>
