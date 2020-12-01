@@ -1,13 +1,11 @@
 ---
-title: "The entrepeneur without a voice.."
-date: "2020-06-12"
+title: 'The entrepeneur without a voice..'
+date: '2020-06-12'
 ---
 
-Our economy is constantly changing. Millennials are increasingly looking for flexible work and startups such as Temper, Uber and Deliveroo are responding well to this. 
-
+Our economy is constantly changing. Millennials are increasingly looking for flexible work and startups such as Temper, Uber and Deliveroo are responding well to this.
 
 These startups promise a future where everyone is an entrepreneur. But is this really true? Or do they only sell a dream?
-
 
 <h3>The headstrong millenial</h3>
 <blockquote>
@@ -57,7 +55,6 @@ The problem is that these companies put their employees away as freelancers and 
 </p>
 
 <strong>This needs to change.</strong>
-
 
 <h3>References</h3>
 
