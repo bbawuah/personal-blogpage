@@ -60,7 +60,7 @@ export default App
 </p>
 
 <p>
-Alot of apps use two different navigators on a screen. A bottom tab navigator and a stack navigator. The hymnal app has the same structure.
+A lot of apps use two different navigators on a screen. A bottom tab navigator and a stack navigator. The hymnal app has the same structure.
 <br/>
 <br/>
 Every page on the main navigator has a stack navigator that makes it possible to move to different pages on a deeper level.
