@@ -56,7 +56,17 @@ export default App
 
 <h3>Navigation</h3>
 
-<p>React native needs to have a main navigator. For this application, I used a bottom tab navigator from <a href="https://reactnavigation.org/" style="color:white" target="__blank">@react-navigation</a>. I also wrote a small function which checks whether the phone is on darkmode or light and displays the navigator is the right color.
+<p>For this application, I used a bottom tab navigator from <a href="https://reactnavigation.org/" style="color:white" target="__blank">@react-navigation</a>. I also wrote a small function which checks whether the phone is on darkmode or light and displays the navigator is the right color.
+</p>
+
+<p>
+Alot of apps use two different navigators on a screen. A bottom tab navigator and a stack navigator. The hymnal app has the same structure.
+<br/>
+<br/>
+Every page on the main navigator has a stack navigator that makes it possible to move to different pages on a deeper level.
+<br/>
+<br/>
+For the two navigators to work correctly, we navigate from the main navigation to a 'deeper' secondary 'stack' navigation.
 </p>
 
 ```typescript
@@ -134,16 +144,7 @@ export const MainNavigator: React.FC = () => {
 }
 ```
 
-<p>
-Alot of apps use two different navigators on a screen. A bottom tab navigator and a stack navigator. The hymnal app has the same structure.
-<br/>
-<br/>
-Every page on the main navigator has stack navigator that makes it possible to move to different pages that are related to either the home page, the favourites page or the settings page. 
-<br/>
-<br/>
-For the two navigators to work correctly, we navigate from the main navigation to a secondary 'stack' navigation.
-</p>
-<p>Here is the code of how I did this for the home page.</p>
+<p>Here is the code of how the stack navigator for the home page looks like. This stack navigator shows the homepage where the use can choose a song to sing an navigate to the song page.</p>
 
 ```typescript
 import React from 'react'
@@ -198,8 +199,6 @@ export const Home: React.FC<HomeNavProps<'Home'>> = () => {
   }
 }
 ```
-
-<p>This stack navigator shows the homepage where the use can choose a song to sing an navigate to the song page.</p>
 
 <h3>State Management</h3>
 
