@@ -29,13 +29,16 @@ export const Header: React.FC<Props> = () => {
     >
       <Link to="/">
         <Img
-          style={{ width: 150, borderRadius: '50%', margin: '1rem' }}
+          style={{ width: 50, borderRadius: '50%', margin: '1rem' }}
           fluid={data.headerImage.childImageSharp.fluid}
         />
       </Link>
 
       <nav>
         <ul>
+          <Link to="/blog">
+            <li>Projects</li>
+          </Link>
           <Link to="/blog">
             <li>Blog</li>
           </Link>

@@ -19,16 +19,17 @@ interface Props {
 const IndexPage: React.FC<Props> = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi, I'm {data.site.siteMetadata.author}.</h1>
-    <p className="description">{data.site.siteMetadata.description}</p>
-    <Blockquote
-      quote={
-        '“When everyone else was thinking it was time for bed, his mind was telling him it’s time to get ahead of the competition.”'
-      }
-      auth={'Kobe Bryant, The Mamba Mentality'}
-    />
-    <Projects />
-    <div style={{ width: '100%', marginBottom: `1.45rem` }}></div>
+    <section>
+      <h1>Hi, I'm {data.site.siteMetadata.author}.</h1>
+      <p className="description">{data.site.siteMetadata.description}</p>
+      <Blockquote
+        quote={
+          '“When everyone else was thinking it was time for bed, his mind was telling him it’s time to get ahead of the competition.”'
+        }
+        auth={'Kobe Bryant, The Mamba Mentality'}
+      />
+    </section>
+    <div className="canvas"></div>
   </Layout>
 )
 
