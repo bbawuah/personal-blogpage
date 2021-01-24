@@ -1,7 +1,6 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import Img from 'gatsby-image'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
 interface Props {
   siteTitle: string

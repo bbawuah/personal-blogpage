@@ -1,8 +1,8 @@
 import React from 'react'
+import { Blockquote } from '../components/Blockquote/Blockquote'
+import { Form } from '../components/Form/Form'
 import Layout from '../components/Layout'
 import { SEO } from '../components/seo'
-import { Blockquote } from '../components/Blockquote'
-import { Form } from '../components/Form'
 
 const ContactPage: React.FC = () => (
   <Layout>

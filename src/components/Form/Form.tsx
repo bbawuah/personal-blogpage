@@ -8,9 +8,16 @@ const encode = (data: any) => {
     .join('&')
 }
 
+enum formDataValues {
+  name = 'name',
+  email = 'email',
+  subject = 'subject',
+  message = 'message'
+}
+
 export const Form: React.FC = () => {
-  const [name, setName] = useState<string>()
-  const [email, setEmail] = useState<string>()
+  const [name, setName] = useState<string | undefined>()
+  const [email, setEmail] = useState<string | undefined>()
   const [subject, setSubject] = useState<string>()
   const [message, setMessage] = useState<string>()
 
@@ -21,55 +28,18 @@ export const Form: React.FC = () => {
     message
   }
 
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     name: "",
-  //     email: "",
-  //     subject: "",
-  //     message: "",
-  //   }
-  // }
-
-  function handleInputChange(event: any) {
-    const target = event.name
-    const value = target.value
-
-    switch (target) {
-      case 'name':
-        setName(value)
-        break
-      case 'email':
-        setEmail(value)
-        break
-      case 'subject':
-        setSubject(value)
-        break
-      case 'message':
-        setMessage(value)
-        break
-    }
-  }
-
   function handleSubmit(e: any) {
-    console.log(e.target)
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({ 'form-name': 'contact', ...formData })
     })
       .then(() => {
-        setName('')
-        setEmail('')
-        setSubject('')
-        setMessage('')
-
         swal(
           'Success!',
           'I would get back to you as early as possible😁',
           'success'
         )
-        console.log('email is send!')
       })
       .catch((error) => console.log(error))
 
@@ -77,15 +47,26 @@ export const Form: React.FC = () => {
   }
 
   return (
-    <form name="contact" className={FormStyles.form} onSubmit={handleSubmit}>
+    <form
+      name="contact"
+      className={FormStyles.form}
+      onSubmit={(e) => {
+        setName('')
+        setEmail('')
+        setSubject('')
+        setMessage('')
+        handleSubmit(e)
+        return
+      }}
+    >
       <label>
         Name
         <input
           type="text"
-          name="name"
+          name={formDataValues.name}
           id="name"
-          required
-          onChange={handleInputChange}
+          required={true}
+          onChange={({ target }) => setName(target.value)}
           value={name}
         />
       </label>
@@ -93,10 +74,10 @@ export const Form: React.FC = () => {
         Email
         <input
           type="email"
-          name="email"
+          name={formDataValues.email}
           id="email"
-          required
-          onChange={handleInputChange}
+          required={true}
+          onChange={({ target }) => setEmail(target.value)}
           value={email}
         />
       </label>
@@ -104,20 +85,20 @@ export const Form: React.FC = () => {
         Subject
         <input
           type="text"
-          name="subject"
+          name={formDataValues.subject}
           id="subject"
-          onChange={handleInputChange}
+          onChange={({ target }) => setSubject(target.value)}
           value={subject}
         />
       </label>
       <label>
         Message
         <textarea
-          name="message"
+          name={formDataValues.message}
           id="message"
           rows={5}
-          required
-          onChange={handleInputChange}
+          required={true}
+          onChange={({ target }) => setMessage(target.value)}
           value={message}
         />
       </label>

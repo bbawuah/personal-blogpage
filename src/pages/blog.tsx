@@ -2,8 +2,8 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import { SEO } from '../components/seo'
-import { Blockquote } from '../components/Blockquote'
-import { BlogList } from '../components/BlogList'
+import { Blockquote } from '../components/Blockquote/Blockquote'
+import { BlogList } from '../components/BlogList/BlogList'
 
 interface Props {
   data: {

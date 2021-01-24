@@ -1,10 +1,16 @@
 import React from 'react'
+import { ProjectListItem } from '../ProjectListItem/ProjectListItem'
 import projectsListStyle from './Project.module.scss'
-import { ProjectListItem } from './ProjectListItem'
 
 export const Projects: React.FC = () => (
   <div className={projectsListStyle.list}>
     <h4>Some of my projects</h4>
+    <ProjectListItem
+      url={'https://apps.apple.com/in/app/adventist-melodies/id1530974313?ls=1'}
+      cls={projectsListStyle.listItem}
+      title={'A digital hymnal with sound'}
+      desc={'Fullstack mobile application.'}
+    />
     <ProjectListItem
       url={'https://www.tasksy.work/'}
       cls={projectsListStyle.listItem}
