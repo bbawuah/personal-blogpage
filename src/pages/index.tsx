@@ -4,6 +4,8 @@ import Layout from '../components/Layout'
 import { SEO } from '../components/seo'
 import { Blockquote } from '../components/Blockquote/Blockquote'
 import { Projects } from '../components/Project/Projects'
+import { Box } from '../components/ThreeJS/Box'
+import { Trail } from '../components/Animations/Trail'
 
 interface Props {
   data: {
@@ -16,20 +18,25 @@ interface Props {
   }
 }
 
-const IndexPage: React.FC<Props> = ({ data }) => (
+const IndexPage: React.FC<Props> = ({
+  data
+}) => (
   <Layout>
     <SEO title="Home" />
     <section>
-      <h1>Hi, I'm {data.site.siteMetadata.author}.</h1>
-      <p className="description">{data.site.siteMetadata.description}</p>
-      <Blockquote
-        quote={
-          '“When everyone else was thinking it was time for bed, his mind was telling him it’s time to get ahead of the competition.”'
-        }
-        auth={'Kobe Bryant, The Mamba Mentality'}
+      <Trail
+        title={`Hi, I'm ${data.site.siteMetadata.author}.`}
       />
+      <p className="description">
+        {
+          data.site.siteMetadata
+            .description
+        }
+      </p>
     </section>
-    <div className="canvas"></div>
+    <div className="canvas">
+      <Box />
+    </div>
   </Layout>
 )
 

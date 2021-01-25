@@ -6,7 +6,10 @@
  */
 
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import {
+  useStaticQuery,
+  graphql
+} from 'gatsby'
 import 'normalize.css'
 import './layout.scss'
 import { Header } from './Header/Header'
@@ -16,7 +19,9 @@ interface Props {
   children: JSX.Element[] | JSX.Element
 }
 
-export const Layout: React.FC<Props> = ({ children }) => {
+export const Layout: React.FC<Props> = ({
+  children
+}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,7 +34,11 @@ export const Layout: React.FC<Props> = ({ children }) => {
 
   return (
     <div className="container">
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header
+        siteTitle={
+          data.site.siteMetadata.title
+        }
+      />
       <main>{children}</main>
 
       <Footer />

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: start;
+  flex-flow: row wrap;
+  .trailsMainTextContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .trailMainText {
+    font-family: -apple-system,
+      BlinkMacSystemFont, Segoe UI,
+      Roboto, Oxygen, Ubuntu, Cantarell,
+      Fira Sans, Droid Sans,
+      Helvetica Neue, sans-serif;
+    overflow: hidden;
+    margin-right: 5px;
+    padding-right: 8px;
+    height: 50px;
+    line-height: 6.5rem;
+    font-weight: 800;
+    letter-spacing: -10px;
+    font-size: 2.5rem;
+    will-change: transform, opacity;
+  }
+}
