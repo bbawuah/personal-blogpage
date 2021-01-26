@@ -6,22 +6,22 @@
  */
 
 import React from 'react'
-import {
-  useStaticQuery,
-  graphql
-} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import 'normalize.css'
 import './layout.scss'
 import { Header } from './Header/Header'
 import { Footer } from './Footer/Footer'
 
+export enum Display {
+  flex = 'flex',
+  column = 'column'
+}
 interface Props {
   children: JSX.Element[] | JSX.Element
+  display?: Display
 }
 
-export const Layout: React.FC<Props> = ({
-  children
-}) => {
+export const Layout: React.FC<Props> = ({ children, display }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -34,12 +34,15 @@ export const Layout: React.FC<Props> = ({
 
   return (
     <div className="container">
-      <Header
-        siteTitle={
-          data.site.siteMetadata.title
-        }
-      />
-      <main>{children}</main>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <main
+        style={{
+          display,
+          alignItems: 'center'
+        }}
+      >
+        {children}
+      </main>
 
       <Footer />
     </div>

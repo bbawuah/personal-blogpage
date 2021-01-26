@@ -56,7 +56,7 @@ const Controls = () => {
 
 const Plane: React.FC = () => {
   return  (
-    <mesh rotation={[-Math.PI / 2 , 0, 0]} position={[0, -0.5, 0]} receiveShadow> 
+    <mesh rotation={[-Math.PI / 2 , 0, 0]} position={[0, -0.5, 0]} receiveShadow={true}> 
        <planeBufferGeometry attach="geometry" args={[100, 100]} />
      <meshPhysicalMaterial attach="material" color="#e5e7eb" />
     </mesh>
@@ -86,9 +86,9 @@ const SpinningMesh: React.FC = () => {
     onClick={() => setActive(!active)} onPointerOver={() => setHovered(true)} 
     onPointerOut={() => setHovered(false)} 
     scale={(props.scale as any)}
-    castShadow >
+    castShadow={true} >
       <ambientLight />
-      <spotLight position={[2,2,6]} penumbra={0.25} castShadow/>
+      <spotLight position={[2,2,6]} penumbra={0.25} castShadow={true}/>
       <boxBufferGeometry args={[1, 1, 1]} />
       <a.meshPhysicalMaterial attach="material" color={props.color}/>
   </a.mesh>
