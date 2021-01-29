@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useState } from 'react'
+import React, { Fragment, useRef } from 'react'
 import {
   Canvas,
   MeshProps,
@@ -7,10 +7,8 @@ import {
   useThree,
   ReactThreeFiber
 } from 'react-three-fiber'
-import type { Mesh } from 'three'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { useSpring, a } from '@react-spring/three'
 import { WobbleMesh } from './WobbleMesh'
 import { Torus } from './TorusGeometry'
 import { SpinningBox } from './SpinningBox'

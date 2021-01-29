@@ -2,8 +2,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout, { Display } from '../components/Layout'
 import { SEO } from '../components/seo'
-import { Blockquote } from '../components/Blockquote/Blockquote'
-import { Projects } from '../components/Project/Projects'
 import { Scene } from '../components/ThreeJS/Scene'
 import { Trail } from '../components/Animations/Trail'
 
