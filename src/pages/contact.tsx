@@ -7,9 +7,11 @@ import { SEO } from '../components/seo'
 const ContactPage: React.FC = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Let's get in contact!</h1>
+    <h2>Let's get in contact!</h2>
     <Blockquote quote={'“It goes down in the DM.”'} auth={'Yo Gotti'} />
-    <Form />
+    <section className="blog-contact-container">
+      <Form />
+    </section>
   </Layout>
 )
 

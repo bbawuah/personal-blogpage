@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-  Link,
-  graphql,
-  useStaticQuery
-} from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
 import * as BlogListStyle from '../BlogList/BlogList.module.scss'
 
 interface Props {
@@ -28,21 +24,14 @@ interface Props {
 export const BlogListItem: React.FC = () => {
   const data: Props = useStaticQuery(graphql`
     query BlogQuery {
-      allMarkdownRemark(
-        sort: {
-          fields: [frontmatter___date]
-          order: DESC
-        }
-      ) {
+      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
         totalCount
         edges {
           node {
             id
             frontmatter {
               title
-              date(
-                formatString: "DD MMMM, YYYY"
-              )
+              date(formatString: "DD MMMM, YYYY")
             }
             fields {
               slug
@@ -55,37 +44,19 @@ export const BlogListItem: React.FC = () => {
   `)
   return (
     <>
-      {data.allMarkdownRemark.edges.map(
-        ({ node }) => (
-          <div
-            key={node.id}
-            className={
-              BlogListStyle.listItem
-            }
-          >
-            <Link to={node.fields.slug}>
-              <div>
-                <h2>
-                  {
-                    node.frontmatter
-                      .title
-                  }
-                </h2>
-                <h4>
-                  <span>
-                    —{' '}
-                    {
-                      node.frontmatter
-                        .date
-                    }
-                  </span>
-                </h4>
-                <p>{node.excerpt}</p>
-              </div>
-            </Link>
-          </div>
-        )
-      )}
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div key={node.id} className={BlogListStyle.listItem}>
+          <Link to={node.fields.slug}>
+            <div>
+              <h3>{node.frontmatter.title}</h3>
+              <h4>
+                <span>— {node.frontmatter.date}</span>
+              </h4>
+              <p>{node.excerpt}</p>
+            </div>
+          </Link>
+        </div>
+      ))}
     </>
   )
 }

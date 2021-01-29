@@ -14,12 +14,14 @@ interface Props {
 const BlogPage: React.FC<Props> = ({ data }) => (
   <Layout>
     <SEO title="Blog" />
-    <h1>Find out what keeps me busy.</h1>
+    <h2>Find out what keeps me busy.</h2>
     <Blockquote
       quote={'"I write to discover what I know."'}
       auth={"Flannery O'Connor"}
     />
-    <BlogList data={data.allMarkdownRemark} />
+    <section className="blog-contact-container">
+      <BlogList data={data.allMarkdownRemark} />
+    </section>
   </Layout>
 )
 

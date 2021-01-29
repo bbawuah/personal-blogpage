@@ -7,7 +7,6 @@ import {
   animated
 } from 'react-spring'
 import ContainerStyles from './ListContainer.module.scss'
-import data from './data'
 import { ProjectListItem } from '../ProjectListItem/ProjectListItem'
 
 const projecten = [
