@@ -23,6 +23,6 @@
   
 @font-face {
   font-family: "Gilroy-ExtraBold";
-  src: url('src/utils/webFonts/GilroyExtraBold/font.woff2') format('woff2'), url('src/utils/webFonts/GilroyExtraBold/font.woff') format('woff');
+  src: url('webFonts/GilroyExtraBold/font.woff2') format('woff2'), url('webFonts/GilroyExtraBold/font.woff') format('woff');
 }
 

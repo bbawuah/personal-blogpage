@@ -42,7 +42,7 @@ module.exports = {
       options: {
         custom: {
           families: ['Gilroy-ExtraBold'],
-          urls: ['src/utils/myfonts.css']
+          urls: ['myfonts.css']
         }
       }
     },
