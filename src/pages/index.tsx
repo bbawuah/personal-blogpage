@@ -4,7 +4,7 @@ import Layout, { Display } from '../components/Layout'
 import { SEO } from '../components/seo'
 import { Blockquote } from '../components/Blockquote/Blockquote'
 import { Projects } from '../components/Project/Projects'
-import { Box } from '../components/ThreeJS/Box'
+import { Scene } from '../components/ThreeJS/Box'
 import { Trail } from '../components/Animations/Trail'
 
 interface Props {
@@ -21,12 +21,12 @@ interface Props {
 const IndexPage: React.FC<Props> = ({ data }) => (
   <Layout display={Display.flex}>
     <SEO title="Home" />
-    <section>
+    <section className="landing-hero">
       <Trail title={`Hi, I'm ${data.site.siteMetadata.author}.`} />
       <p className="description">{data.site.siteMetadata.description}</p>
     </section>
     <div className="canvas">
-      <Box />
+      <Scene />
     </div>
   </Layout>
 )

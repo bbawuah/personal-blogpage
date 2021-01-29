@@ -8,8 +8,37 @@ import {
 } from 'react-spring'
 import ContainerStyles from './ListContainer.module.scss'
 import data from './data'
+import { ProjectListItem } from '../ProjectListItem/ProjectListItem'
 
-const projecten: number[] = [1, 2, 3, 4, 5]
+const projecten = [
+  {
+    url: 'https://apps.apple.com/in/app/adventist-melodies/id1530974313?ls=1',
+    title: 'A digital hymnal with sound',
+    desc: 'Fullstack mobile application.'
+  },
+  {
+    url: 'https://www.tasksy.work/',
+    title: 'Tasksy - A task management tool for achievers',
+    desc: 'Fullstack taskmanagement web application.'
+  },
+  {
+    url: 'https://hope-foundation.faith/',
+    title: 'H.O.P.E. Foundation',
+    desc: 'Website for the H.O.P.E. foundation.'
+  },
+  {
+    url: 'https://bawuah-chatapp.herokuapp.com/',
+    title: 'Chat app',
+    desc:
+      'Real time web application where users are able to chat to one another using the Socket library.'
+  },
+  {
+    url: 'https://bawuah-bible-app.herokuapp.com/',
+    title: 'ASV bible app',
+    desc:
+      'App that renders chapters and/or verses from the American Standard Version of the Bible.'
+  }
+]
 
 interface DataType {
   name: string
@@ -18,28 +47,30 @@ interface DataType {
   height: number
 }
 
-export const ListContainer: React.FC = () => {
-  const [open, set] = useState(false)
+interface Props {
+  shouldOpen: boolean
+}
+
+export const ListContainer: React.FC<Props> = ({ shouldOpen }) => {
+  const [open, set] = useState<boolean>(shouldOpen)
 
   const springRef = useRef()
   const { size, ...rest } = useSpring({
     ref: springRef,
     config: config.stiff,
     from: {
-      size: '20%',
-      background: 'hotpink'
+      size: '20%'
     },
     to: {
-      size: open ? '100%' : '20%',
-      background: open ? 'white' : 'hotpink'
+      size: open ? '100%' : '20%'
     }
   })
 
   const transRef = useRef()
-  const transitions = useTransition(open ? data : [], {
+  const transitions = useTransition(open ? projecten : [], {
     ref: transRef,
     unique: true,
-    trail: 400 / data.length,
+    trail: 400 / projecten.length,
     from: { opacity: 0, transform: 'scale(0)' },
     enter: { opacity: 1, transform: 'scale(1)' },
     leave: { opacity: 0, transform: 'scale(0)' }
@@ -60,14 +91,12 @@ export const ListContainer: React.FC = () => {
           width: size,
           height: size
         }}
-        onClick={() => set((open) => !open)}
       >
         {transitions((style, item) => {
-          console.log(style)
-          console.log(item)
           return (
             <animated.div className={ContainerStyles.item} style={style as any}>
-              {item.name}
+              <p>{item.title}</p>
+              <div>{item.desc}</div>
             </animated.div>
           )
         })}
