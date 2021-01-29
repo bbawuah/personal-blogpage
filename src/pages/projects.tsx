@@ -11,9 +11,9 @@ const Projects: React.FC = () => (
     <SEO title="Projects" />
     <section>
       <h2>Projects</h2>
-      <p className="description">Check out what I’ve been working on</p>
+      <p className="description">Some of the projects I’ve been working on</p>
       <div className="test">
-        <ListContainer shouldOpen={true} />
+        <ListContainer />
       </div>
     </section>
   </Layout>

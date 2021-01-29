@@ -1,3 +1,4 @@
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import React, { useState, useRef } from 'react'
 import {
   useTransition,
@@ -7,51 +8,50 @@ import {
   animated
 } from 'react-spring'
 import ContainerStyles from './ListContainer.module.scss'
-import { ProjectListItem } from '../ProjectListItem/ProjectListItem'
 
-const projecten = [
-  {
-    url: 'https://apps.apple.com/in/app/adventist-melodies/id1530974313?ls=1',
-    title: 'A digital hymnal with sound',
-    desc: 'Fullstack mobile application.'
-  },
-  {
-    url: 'https://www.tasksy.work/',
-    title: 'Tasksy - A task management tool for achievers',
-    desc: 'Fullstack taskmanagement web application.'
-  },
-  {
-    url: 'https://hope-foundation.faith/',
-    title: 'H.O.P.E. Foundation',
-    desc: 'Website for the H.O.P.E. foundation.'
-  },
-  {
-    url: 'https://bawuah-chatapp.herokuapp.com/',
-    title: 'Chat app',
-    desc:
-      'Real time web application where users are able to chat to one another using the Socket library.'
-  },
-  {
-    url: 'https://bawuah-bible-app.herokuapp.com/',
-    title: 'ASV bible app',
-    desc:
-      'App that renders chapters and/or verses from the American Standard Version of the Bible.'
+interface QueryProps {
+  allMarkdownRemark: {
+    totalCount: number
+    edges: {
+      node: {
+        id: number
+        frontmatter: {
+          title: string
+          date: string
+        }
+        fields: {
+          slug: any
+        }
+        excerpt: string
+      }
+    }[]
   }
-]
-
-interface DataType {
-  name: string
-  description: string
-  css: string
-  height: number
 }
 
-interface Props {
-  shouldOpen: boolean
-}
-
-export const ListContainer: React.FC<Props> = ({ shouldOpen }) => {
-  const [open, set] = useState<boolean>(shouldOpen)
+export const ListContainer: React.FC = () => {
+  const data: QueryProps = useStaticQuery(graphql`
+    query PostQuery {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { type: { eq: "project" } } }
+      ) {
+        totalCount
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              date(formatString: "DD MMMM, YYYY")
+            }
+            fields {
+              slug
+            }
+            excerpt
+          }
+        }
+      }
+    }
+  `)
 
   const springRef = useRef()
   const { size, ...rest } = useSpring({
@@ -61,25 +61,22 @@ export const ListContainer: React.FC<Props> = ({ shouldOpen }) => {
       size: '20%'
     },
     to: {
-      size: open ? '100%' : '20%'
+      size: '100%'
     }
   })
 
   const transRef = useRef()
-  const transitions = useTransition(open ? projecten : [], {
+  const transitions = useTransition(data.allMarkdownRemark.edges, {
     ref: transRef,
     unique: true,
-    trail: 400 / projecten.length,
+    trail: 400 / data.allMarkdownRemark.edges.length,
     from: { opacity: 0, transform: 'scale(0)' },
     enter: { opacity: 1, transform: 'scale(1)' },
     leave: { opacity: 0, transform: 'scale(0)' }
   })
 
   // This will orchestrate the two animations above, comment the last arg and it creates a sequence
-  useChain(
-    open ? ([springRef, transRef] as any) : ([transRef, springRef] as any),
-    [0, open ? 0.1 : 0.6]
-  )
+  useChain([springRef, transRef] as any, [0, 0.1])
 
   return (
     <>
@@ -91,11 +88,14 @@ export const ListContainer: React.FC<Props> = ({ shouldOpen }) => {
           height: size
         }}
       >
-        {transitions((style, item) => {
+        {transitions((style, { node }) => {
           return (
             <animated.div className={ContainerStyles.item} style={style as any}>
-              <p>{item.title}</p>
-              <div>{item.desc}</div>
+              <Link to={node.fields.slug}>
+                <h3>{node.frontmatter.title}</h3>
+                <span>{node.frontmatter.date}</span>
+                <p>{node.excerpt}</p>
+              </Link>
             </animated.div>
           )
         })}

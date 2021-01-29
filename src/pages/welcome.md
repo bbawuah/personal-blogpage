@@ -1,6 +1,7 @@
 ---
-title: "Welcome to my blog!"
-date: "2020-05-10"
+title: 'Welcome to my blog!'
+date: '2020-05-10'
+type: 'blog'
 ---
 
 With this blog, I want to share my knowledge about programming, life in general and much more.

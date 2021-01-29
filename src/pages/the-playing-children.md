@@ -1,9 +1,10 @@
 ---
-title: "The playing children"
-date: "2020-05-11"
+title: 'The playing children'
+date: '2020-05-11'
+type: 'blog'
 ---
 
-Philosopher Michel Foucault gave us an apple to shape our own existence in a certain direction. 
+Philosopher Michel Foucault gave us an apple to shape our own existence in a certain direction.
 
 But to what extent can we "shape our lives" in our society?
 

@@ -1,6 +1,7 @@
 ---
 title: 'The entrepeneur without a voice..'
 date: '2020-06-12'
+type: 'blog'
 ---
 
 Our economy is constantly changing. Millennials are increasingly looking for flexible work and startups such as Temper, Uber and Deliveroo are responding well to this.
