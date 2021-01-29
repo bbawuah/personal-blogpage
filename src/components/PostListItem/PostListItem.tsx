@@ -28,7 +28,7 @@ interface QueryProps {
   }
 }
 
-export const PostListItem: React.FC = () => {
+const PostListItem: React.FC = () => {
   const data: QueryProps = useStaticQuery(graphql`
     query PostQuery {
       allMarkdownRemark(
@@ -106,3 +106,5 @@ export const PostListItem: React.FC = () => {
     </>
   )
 }
+
+export default PostListItem

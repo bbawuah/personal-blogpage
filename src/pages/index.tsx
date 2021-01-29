@@ -1,9 +1,10 @@
 import React from 'react'
+import loadable from '@loadable/component'
 import { graphql } from 'gatsby'
 import Layout, { Display } from '../components/Layout'
 import { SEO } from '../components/seo'
 import { Scene } from '../components/ThreeJS/Scene'
-import { Trail } from '../components/Animations/Trail'
+const Trail = loadable(() => import('../components/Animations/Trail'))
 
 interface Props {
   data: {

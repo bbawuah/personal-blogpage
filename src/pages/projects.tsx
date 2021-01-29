@@ -1,10 +1,10 @@
 import React from 'react'
-import { Trail } from '../components/Animations/Trail'
-import { Blockquote } from '../components/Blockquote/Blockquote'
 import Layout, { Display } from '../components/Layout'
-import { PostListItem } from '../components/PostListItem/PostListItem'
+import loadable from '@loadable/component'
+const PostListItem = loadable(() =>
+  import('../components/PostListItem/PostListItem')
+)
 import { SEO } from '../components/seo'
-import { VisibilitySensor } from '../components/VisibilitySensor/VisibilitySensor'
 
 const Projects: React.FC = () => (
   <Layout display={Display.column}>

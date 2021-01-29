@@ -6,7 +6,7 @@ interface Props {
   title: string
 }
 
-export const Trail: React.FC<Props> = ({ title }) => {
+const Trail: React.FC<Props> = ({ title }) => {
   const items = title.split(' ')
   const trail = useTrail(items.length, {
     config: {
@@ -43,3 +43,5 @@ export const Trail: React.FC<Props> = ({ title }) => {
     </div>
   )
 }
+
+export default Trail
