@@ -16,10 +16,10 @@ export const Trail: React.FC<Props> = ({ title }) => {
     },
     opacity: 1 as any,
     x: 0 as any,
-    height: 110,
+    height: window.innerWidth < 500 ? 75 : 110,
     from: {
       opacity: 0 as any,
-      x: 110 as any,
+      x: window.innerWidth < 500 ? (75 as any) : (110 as any),
       height: 0
     },
     letterSpacing: 1

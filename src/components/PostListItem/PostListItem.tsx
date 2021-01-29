@@ -1,5 +1,5 @@
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import {
   useTransition,
   useSpring,
@@ -7,7 +7,7 @@ import {
   config,
   animated
 } from 'react-spring'
-import ContainerStyles from './ListContainer.module.scss'
+import PostListItemStyles from './PostListItem.module.scss'
 
 interface QueryProps {
   allMarkdownRemark: {
@@ -28,7 +28,7 @@ interface QueryProps {
   }
 }
 
-export const ListContainer: React.FC = () => {
+export const PostListItem: React.FC = () => {
   const data: QueryProps = useStaticQuery(graphql`
     query PostQuery {
       allMarkdownRemark(
@@ -81,7 +81,7 @@ export const ListContainer: React.FC = () => {
   return (
     <>
       <animated.div
-        className={ContainerStyles.container}
+        className={PostListItemStyles.container}
         style={{
           ...rest,
           width: size,
@@ -90,7 +90,10 @@ export const ListContainer: React.FC = () => {
       >
         {transitions((style, { node }) => {
           return (
-            <animated.div className={ContainerStyles.item} style={style as any}>
+            <animated.div
+              className={PostListItemStyles.item}
+              style={style as any}
+            >
               <Link to={node.fields.slug}>
                 <h3>{node.frontmatter.title}</h3>
                 <span>{node.frontmatter.date}</span>

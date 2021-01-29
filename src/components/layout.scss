@@ -637,7 +637,6 @@ pre tt:after {
   flex-direction: column;
   justify-content: space-between;
   main {
-    min-height: 600px;
     justify-content: center;
     .landing-hero {
       place-self: center;
@@ -764,9 +763,8 @@ footer {
       flex-direction: column;
       padding: 0 0.5rem;
     }
-
-    h1 {
-      font-size: 4.5rem;
-    }
+  }
+  h1 {
+    font-size: 4.25rem;
   }
 }
