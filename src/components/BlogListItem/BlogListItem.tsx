@@ -21,10 +21,17 @@ interface Props {
   }
 }
 
-export const BlogListItem: React.FC = () => {
+interface PostListProps {
+  type: string
+}
+
+export const PostListItem: React.FC<PostListProps> = ({ type }) => {
   const data: Props = useStaticQuery(graphql`
     query BlogQuery {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { type: { eq: "blog" } } }
+      ) {
         totalCount
         edges {
           node {
@@ -48,10 +55,8 @@ export const BlogListItem: React.FC = () => {
         <div key={node.id} className={BlogListStyle.listItem}>
           <Link to={node.fields.slug}>
             <div>
-              <h2>{node.frontmatter.title}</h2>
-              <h4>
-                <span>— {node.frontmatter.date}</span>
-              </h4>
+              <h3>{node.frontmatter.title}</h3>
+              <span>{node.frontmatter.date}</span>
               <p>{node.excerpt}</p>
             </div>
           </Link>
@@ -61,4 +66,4 @@ export const BlogListItem: React.FC = () => {
   )
 }
 
-export default BlogListItem
+export default PostListItem

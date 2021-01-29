@@ -1,6 +1,7 @@
 ---
-title: "What are the odds?"
-date: "2020-05-26"
+title: 'What are the odds?'
+date: '2020-05-26'
+type: 'blog'
 ---
 
 A lot of sectors and government agencies use algorithms to calculate a future scenario.
@@ -94,7 +95,6 @@ But when it comes to human freedom, we can't let an algorithm do the decision-ma
 <a style="color: #B794F4;" href="https://www.visualcapitalist.com/how-much-data-is-generated-each-day/">https://www.visualcapitalist.com/how-much-data-is-generated-each-day/</a>
 </p>
 </li>
-
 
 <li>
 <p>ProPublica. (2020, 29 februari). <em>Machine Bias. Geraadpleegd op 12 mei 2020</em>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Brian Bawuah, CMD student & developer`,
-    description: `I am a CMD student and programmer, who makes things in TypeScript, with Node and React.`,
+    description: `I am a creative developer who creates things in TypeScript with Node and React`,
     author: `Brian Bawuah`,
     image: `portrait-brian-bawuah.jpg`
   },
@@ -35,6 +35,32 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/brainy-icon.png` // This path is relative to the root of the site.
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['Gilroy-ExtraBold'],
+          urls: ['src/utils/myfonts.css']
+        }
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 600
+            }
+          },
+          `gatsby-remark-copy-linked-files`
+        ]
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

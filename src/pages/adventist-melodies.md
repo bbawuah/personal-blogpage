@@ -1,16 +1,17 @@
 ---
 title: 'Adventist Melodies'
 date: '2020-12-03'
+type: 'project'
 ---
 
 For the last few months, I have been working on an application that allows users to sing their favourite hymns. In this article I'll talk a little bit about the code I wrote for this app.
 
 <h3>Download</h3>
-<p>You can download the app for ios <a href="https://apps.apple.com/in/app/adventist-melodies/id1530974313?ls=1" style="color:white" target="__blank">here</a></p>
-<p>You can download the app for android <a href="https://play.google.com/store/apps/details?id=com.brianbawuah.adventistmelodies" style="color:white" target="__blank">here</a></p>
+<p>You can download the app for ios <a href="https://apps.apple.com/in/app/adventist-melodies/id1530974313?ls=1" target="__blank">here</a></p>
+<p>You can download the app for android <a href="https://play.google.com/store/apps/details?id=com.brianbawuah.adventistmelodies" target="__blank">here</a></p>
 <p>If you like our work and want to help us, you could rate our application and / or leave a donation. Contributions and donations will be used for covering existing server costs, supporting new and exciting projects and helping small churches.
 <br/>
-<a href="https://www.paypal.com/pools/c/8sCczet3Kl" style="color:white" target="__blank">Donate</a>
+<a href="https://www.paypal.com/pools/c/8sCczet3Kl"  target="__blank">Donate</a>
 </p>
 <h3>What did use for this app?</h3>
 <h4>Typescript</h4>
@@ -56,7 +57,7 @@ export default App
 
 <h3>Navigation</h3>
 
-<p>For this application, I used a bottom tab navigator from <a href="https://reactnavigation.org/" style="color:white" target="__blank">@react-navigation</a>. I also wrote a small function which checks whether the phone is on darkmode or light and displays the navigator is the right color.
+<p>For this application, I used a bottom tab navigator from <a href="https://reactnavigation.org/" target="__blank">@react-navigation</a>. I also wrote a small function which checks whether the phone is on darkmode or light and displays the navigator is the right color.
 </p>
 
 <p>

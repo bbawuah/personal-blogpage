@@ -12,11 +12,16 @@ import './layout.scss'
 import { Header } from './Header/Header'
 import { Footer } from './Footer/Footer'
 
+export enum Display {
+  flex = 'flex',
+  column = 'column'
+}
 interface Props {
   children: JSX.Element[] | JSX.Element
+  display?: Display
 }
 
-export const Layout: React.FC<Props> = ({ children }) => {
+export const Layout: React.FC<Props> = ({ children, display }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -30,16 +35,16 @@ export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div className="container">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      <main
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`
+          display,
+          alignItems: 'center'
         }}
       >
-        <main>{children}</main>
-        <Footer />
-      </div>
+        {children}
+      </main>
+
+      <Footer />
     </div>
   )
 }

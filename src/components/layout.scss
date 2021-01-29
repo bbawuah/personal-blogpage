@@ -124,22 +124,22 @@ button,
 select {
   text-transform: none;
 }
-[type="reset"],
-[type="submit"],
+[type='reset'],
+[type='submit'],
 button,
-html [type="button"] {
+html [type='button'] {
   -webkit-appearance: button;
 }
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -159,21 +159,21 @@ legend {
 textarea {
   overflow: auto;
 }
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 ::-webkit-input-placeholder {
@@ -204,10 +204,10 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 img {
   max-width: 100%;
@@ -230,11 +230,10 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
+  font-family: 'Gilroy-ExtraBold';
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 5.5rem;
   line-height: 1.1;
 }
 h2 {
@@ -385,6 +384,11 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-size: 1.2222rem;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px;
 }
 figure {
   margin-left: 0;
@@ -571,10 +575,10 @@ td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
   padding-left: 0.96667rem;
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
@@ -592,8 +596,8 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+    'Liberation Mono', Menlo, Courier, monospace;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -607,13 +611,13 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
-  content: " ";
+  content: ' ';
 }
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
-  content: "";
+  content: '';
 }
 @media only screen and (max-width: 480px) {
   html {
@@ -625,13 +629,26 @@ pre tt:after {
 .container {
   margin: 0 auto;
   padding: 3rem 0;
-  max-width: 650px;
-  padding: 0 1rem;
+  max-width: 1200px;
+  height: 100%;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  main {
+    justify-content: center;
+    .landing-hero {
+      place-self: center;
+      max-width: 600px;
+      text-align: center;
+    }
+  }
 }
 
-body{
-  background-color: #222;
-  color: #EDF2F7;
+body {
+  background-color: #e5e7eb;
+  color: #374151;
 }
 
 header {
@@ -640,27 +657,25 @@ header {
   align-items: center;
 
   nav {
-    width: 8.5rem;
-    padding-right: 1.45rem;
     ul {
       display: flex;
       list-style: none;
       justify-content: space-between;
-      width: 100%;
+      width: 261px;
       margin: 0;
       a {
         text-decoration: none;
-        color: inherit;
+        color: #374151;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-weight: 500;
       }
 
       li {
-        transition: .150s ease-out;
+        transition: 0.15s ease-out;
       }
       li:hover {
-        border-left: 4px solid #EDF2F7;
+        border-left: 4px solid #374151;
         padding-left: 0.125rem;
       }
     }
@@ -669,21 +684,88 @@ header {
 
 .description {
   font-size: 1.2222rem;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px;
 }
 
-footer{
-  
-  ul{
+.canvas {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5e7eb;
+  z-index: -1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2222rem;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 34px;
+  ul {
     display: flex;
     margin-bottom: 0;
     margin-left: 0;
     justify-content: space-between;
     width: 5rem;
     list-style: none;
-    
     svg {
       width: 1.4rem;
-      color: #EDF2F7;
+      color: #374151;
     }
+  }
+}
+
+.canvas-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.projects-page-container {
+  justify-self: start;
+}
+
+.test {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+@media only screen and (max-width: 830px) {
+  header {
+    padding: 0 0.5rem;
+    nav {
+      padding-right: 0;
+      ul {
+        width: 200px;
+      }
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0.5rem;
+    }
+  }
+  h1 {
+    font-size: 4.25rem;
   }
 }
