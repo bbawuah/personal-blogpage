@@ -2,14 +2,14 @@ import React, { Fragment, useRef } from 'react'
 import {
   Canvas,
   MeshProps,
-  useFrame,
   extend,
   useThree,
   ReactThreeFiber
 } from 'react-three-fiber'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { WobbleMesh } from './WobbleMesh'
+import loadable from '@loadable/component'
+const WobbleMesh = loadable(() => import('./WobbleMesh'))
 import { Torus } from './TorusGeometry'
 import { SpinningBox } from './SpinningBox'
 import { Tetrahedron } from './Tetrahedron'

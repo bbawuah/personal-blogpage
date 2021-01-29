@@ -11,7 +11,7 @@ interface WobbleMeshProps {
   pace?: number
 }
 
-export const WobbleMesh: React.FC<WobbleMeshProps> = ({
+const WobbleMesh: React.FC<WobbleMeshProps> = ({
   position,
   args = 1,
   color,
@@ -40,3 +40,5 @@ export const WobbleMesh: React.FC<WobbleMeshProps> = ({
     </mesh>
   )
 }
+
+export default WobbleMesh
