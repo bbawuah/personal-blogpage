@@ -36,7 +36,7 @@ const IndexPage: React.FC<Props> = ({ data }) => {
     <Layout display={Display.flex}>
       <SEO title="Home" />
       <section className="landing-hero">
-        <Trail title={`Hi, I'm ${data.site.siteMetadata.author}.`} />
+        <Trail title={`Hi, I'm ${data.site.siteMetadata.author}`} />
 
         <animated.div style={props as any}>
           <p className="description">{data.site.siteMetadata.description}</p>
