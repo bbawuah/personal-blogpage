@@ -33,7 +33,9 @@ const Trail: React.FC<Props> = ({ title }) => {
             className={TrailStyle.trailMainText}
             style={{
               ...rest,
-              transform: x.interpolate((x: any) => `translate3d(0,${x}px,0)`)
+              transform: x.interpolate(
+                (xvalue: any) => `translate3d(0,${xvalue}px,0)`
+              )
             }}
           >
             <animated.h1>{items[index]}</animated.h1>
