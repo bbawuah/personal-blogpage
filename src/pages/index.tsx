@@ -21,10 +21,10 @@ interface Props {
 const IndexPage: React.FC<Props> = ({ data }) => {
   const props = useSpring({
     config: config.stiff,
-    delay: 1200,
+    delay: 750,
     from: {
       opacity: 0,
-      transform: 'translateY(100px)'
+      transform: 'translateY(50px)'
     },
     to: {
       opacity: 1,
