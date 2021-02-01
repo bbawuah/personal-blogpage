@@ -36,7 +36,7 @@ const Trail: React.FC<Props> = ({ title }) => {
               transform: x.interpolate((x: any) => `translate3d(0,${x}px,0)`)
             }}
           >
-            <animated.h1 style={{ height }}>{items[index]}</animated.h1>
+            <animated.h1>{items[index]}</animated.h1>
           </animated.div>
         ))}
       </div>
