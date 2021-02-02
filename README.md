@@ -1,14 +1,23 @@
 # Portfolio/blog website built with Gatsby js!
 
+## Live demo
+https://www.brianbawuah.com/
 
-# Installation
+## Installation
+**Clone this repo**
 
-Clone repository
-`git clone https://github.com/bbawuah/personal-blogpage.git`
+```
+git clone https://github.com/bbawuah/personal-blogpage.git
+```
 
-Install dependencies
-`npm install`
+**Then, navigate to this folder and run:**
 
-Run development server
-`npm run dev`
+```
+npm install
+```
 
+**Run server:**
+
+```
+npm run dev-server
+```
