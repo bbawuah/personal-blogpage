@@ -37,7 +37,7 @@
     "react-typography": "^0.16.19",
     "react-visibility-sensor": "^5.1.1",
     "sweetalert": "^2.1.2",
-    "three": "^0.124.0",
+    "three": "^0.125.0",
     "tslint-config-standard": "^9.0.0",
     "typography": "^0.16.19"
   },
