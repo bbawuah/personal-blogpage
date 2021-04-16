@@ -1,4 +1,23 @@
 # Portfolio/blog website built with Gatsby js!
 
+## Live demo
+https://www.brianbawuah.com/
 
-A small introduction in building static generated pages with Gatsby!
+## Installation
+**Clone this repo**
+
+```
+git clone https://github.com/bbawuah/personal-blogpage.git
+```
+
+**Then, navigate to this folder and run:**
+
+```
+npm install
+```
+
+**Run server:**
+
+```
+npm run dev
+```
