@@ -9,6 +9,16 @@ Get the most out of your day by tracking your daily tasks.
 
 ![Tasksy landing](../utils/assets/tasksy.png)
 
+<p>
+You can view the code of the server <a href="https://github.com/bbawuah/Tasksy-api"  target="__blank">here</a>. 
+</p>
+<p>
+You can view the code of the frontend <a href="https://github.com/bbawuah/Tasksy-ui"  target="__blank">here</a>. 
+</p>
+<p>
+You can view the project <a href="https://www.tasksy.work/"  target="__blank">here</a>. 
+</p>
+
 <h3>Concept</h3>
 <p>Tasksy is a task management tool that can be used to keep track of your tasks.</p>
 <p>The application is built in React, Node.js and Mongo DB
@@ -458,16 +468,6 @@ export default RegisterForm
 
 <p>
 The dashboard allows the user to add and delete tasks. The user can also edit his profile and add a profile picture to personalize his environment
-</p>
-
-<p>
-You can view the code of the server <a href="https://github.com/bbawuah/Tasksy-api"  target="__blank">here</a>. 
-</p>
-<p>
-You can view the code of the frontend <a href="https://github.com/bbawuah/Tasksy-ui"  target="__blank">here</a>. 
-</p>
-<p>
-You can view the project <a href="https://www.tasksy.work/"  target="__blank">here</a>. 
 </p>
 
 <h3>Wanna know more? Let's chat!</h3>

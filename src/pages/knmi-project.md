@@ -8,6 +8,15 @@ This assignment is about creating an interactive insight into cause and effect, 
 
 ![KNMI landing](../utils/assets/project-knmi.png)
 
+<p>
+You can view the code of the frontend <a href="https://github.com/bbawuah/project-knmi"  target="__blank">here</a>. 
+</p>
+<p>
+You can view the project <a href="https://project-knmi.netlify.app/"  target="__blank">here</a>. 
+</p>
+
+<strong>_The project is only built for desktop applications_</strong>
+
 <h3>Concept</h3>
 <p>
 In our application we want to see what consequences the Corona virus and the associated measures have on the substances in the air. We focused here on NO2, nitrogen dioxide. We can read these NO2 values ​​using the Tropomi satellite of the KNMI. We also looked at the measures taken by a number of countries and cities. We eventually made a selection of 4 cities, Amsterdam, London, Rome and Madrid.
@@ -368,14 +377,5 @@ BarChart.propTypes = {
 <p>
 This was a very challenging but cool project that pulled me out of my comfort zone. I was able to learn a lot about working together in a group with designers and developers. As a group, we worked on the project almost every day and we are proud of the result!
 </p>
-
-<p>
-You can view the code of the frontend <a href="https://github.com/bbawuah/project-knmi"  target="__blank">here</a>. 
-</p>
-<p>
-You can view the project <a href="https://project-knmi.netlify.app/"  target="__blank">here</a>. 
-</p>
-
-<strong>_The project is only built for desktop applications_</strong>
 
 <p>Thanks for reading!</p>

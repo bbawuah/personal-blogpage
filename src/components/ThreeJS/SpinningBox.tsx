@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react"
-import { useSpring, a } from "react-spring"
+import React, { useRef } from "react"
 import { useFrame } from "react-three-fiber"
 import type { Mesh } from 'three'
 import * as THREE from 'three'

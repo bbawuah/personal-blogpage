@@ -8,6 +8,13 @@ With this chat application users can communicate with each other in rooms.
 
 ![Chat landing](../utils/assets/chat-landing.png)
 
+<p>
+You can view the code of the server <a href="https://github.com/bbawuah/chat-app/"  target="__blank">here</a>. 
+</p>
+<p>
+You can view the project <a href="https://bawuah-chatapp.herokuapp.com/"  target="__blank">here</a>. 
+</p>
+
 <h3>Concept</h3>
 <p>The application is built with Handlebars, Node.js and Socket.IO
 </p>
@@ -214,13 +221,6 @@ module.exports = {
   generateLocationMessage
 }
 ```
-
-<p>
-You can view the code of the server <a href="https://github.com/bbawuah/chat-app/"  target="__blank">here</a>. 
-</p>
-<p>
-You can view the project <a href="https://bawuah-chatapp.herokuapp.com/"  target="__blank">here</a>. 
-</p>
 
 <h3>Wanna know more? Let's chat!</h3>
 <p>These are just some code snippets. Do you know more about this app? Send me a message! I would love to talk code and learn from others :)</p>

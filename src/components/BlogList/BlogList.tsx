@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import * as BlogListStyle from './BlogList.module.scss'
-import { PostListItem } from '../BlogListItem/BlogListItem'
+import { PostListItem } from './BlogListItem/BlogListItem'
 
 interface Props {
   data: any
