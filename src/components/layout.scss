@@ -644,6 +644,7 @@ pre tt:after {
       place-self: center;
       max-width: 600px;
       text-align: center;
+      z-index: 1;
     }
   }
 }
@@ -657,6 +658,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 
   nav {
     ul {
@@ -697,7 +699,7 @@ header {
   height: 100vh;
   width: 100vw;
   background-color: #e5e7eb;
-  z-index: -1;
+  z-index: 0;
 }
 
 footer {
@@ -709,6 +711,8 @@ footer {
   font-style: normal;
   font-weight: 300;
   line-height: 34px;
+  z-index: 1;
+
   ul {
     display: flex;
     margin-bottom: 0;
