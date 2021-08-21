@@ -32,16 +32,14 @@ export const Layout: React.FC<Props> = ({ children, display }) => {
   `)
 
   return (
-    <div className="container">
-      <main
-        style={{
-          display,
-          alignItems: 'center'
-        }}
-      >
-        {children}
-      </main>
-    </div>
+    <main
+      style={{
+        display,
+        alignItems: 'center'
+      }}
+    >
+      {children}
+    </main>
   )
 }
 

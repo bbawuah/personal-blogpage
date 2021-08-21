@@ -6,7 +6,9 @@ import { SEO } from '../components/seo'
 import 'normalize.css'
 import { Scene } from '../components/ThreeJS/Scene'
 import { animated, config, useSpring } from 'react-spring'
-import { Title } from '../components/Core/Title/Title'
+import { Title } from '../components/Core/Typography/Title/Title'
+import { TextContainer } from '../components/Domain/Landing/TextContainer/TextContainer'
+import Center from '../components/Core/Center/Center'
 
 const Trail = loadable(() => import('../components/Animations/Trail'))
 interface Props {
@@ -21,30 +23,13 @@ interface Props {
 }
 
 const IndexPage: React.FC<Props> = ({ data }) => {
-  const props = useSpring({
-    config: config.stiff,
-    delay: 750,
-    from: {
-      opacity: 0,
-      transform: 'translateY(50px)'
-    },
-    to: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    }
-  })
-
   return (
     <Layout display={Display.flex}>
       <SEO title="Home" />
-      <section className="landing-hero">
-        <Trail title={`Hi, I'm ${data.site.siteMetadata.author}`} />
-        <Title>Test</Title>
 
-        <animated.div style={props as any}>
-          <p className="description">{data.site.siteMetadata.description}</p>
-        </animated.div>
-      </section>
+      <Center grow={true}>
+        <TextContainer title={'Brian Bawuah'} />
+      </Center>
       <div className="canvas">{/* <Scene /> */}</div>
     </Layout>
   )

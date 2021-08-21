@@ -1,3 +1,11 @@
 @import './variables/colors';
 @import './variables/fonts';
 @import './variables/functions/spacing';
+
+html,
+body,
+#___gatsby,
+#___gatsby > *,
+main {
+  height: 100%;
+}
