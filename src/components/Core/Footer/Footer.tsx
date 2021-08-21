@@ -1,9 +1,11 @@
 import React from 'react'
+import styles from './Footer.module.scss'
+import classNames from 'classnames'
 
 export const Footer: React.FC = () => {
   return (
-    <footer>
-      <ul>
+    <footer className={styles.container}>
+      <ul className={styles.list}>
         <a
           href="https://github.com/bbawuah"
           target="_blank"
@@ -15,7 +17,10 @@ export const Footer: React.FC = () => {
               focusable="false"
               data-prefix="fab"
               data-icon="github"
-              className="svg-inline--fa fa-github fa-w-16"
+              className={classNames(
+                'svg-inline--fa fa-github fa-w-16',
+                styles.icon
+              )}
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -38,7 +43,10 @@ export const Footer: React.FC = () => {
               focusable="false"
               data-prefix="fab"
               data-icon="instagram"
-              className="svg-inline--fa fa-instagram fa-w-14"
+              className={classNames(
+                'svg-inline--fa fa-instagram fa-w-14',
+                styles.icon
+              )}
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -61,7 +69,10 @@ export const Footer: React.FC = () => {
               focusable="false"
               data-prefix="fab"
               data-icon="linkedin"
-              className="svg-inline--fa fa-linkedin fa-w-14"
+              className={classNames(
+                'svg-inline--fa fa-linkedin fa-w-14',
+                styles.icon
+              )}
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"

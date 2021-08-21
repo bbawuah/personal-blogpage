@@ -1,6 +1,6 @@
 import React from 'react'
-import { Blockquote } from '../components/Blockquote/Blockquote'
-import { Form } from '../components/Form/Form'
+import { Blockquote } from '../components/Core/Blockquote/Blockquote'
+import { Form } from '../components/Core/Form/Form'
 import Layout from '../components/Layout'
 import { SEO } from '../components/seo'
 

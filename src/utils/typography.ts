@@ -4,15 +4,21 @@ const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.666,
   headerFontFamily: [
-    'Gilroy-ExtraBold',
-    'Avenir Next',
-    'Helvetica Neue',
+    'horizon',
+    'OpenSans',
+    '-apple-system',
+    'BlinkMacSystemFont',
     'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif'
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    'sans-serif;'
   ],
-  bodyFontFamily: ['Georgia', 'serif']
+  bodyFontFamily: ['Helvetica Neue', 'Georgia']
 })
 
 export default typography

@@ -3,10 +3,12 @@ import loadable from '@loadable/component'
 import { graphql } from 'gatsby'
 import Layout, { Display } from '../components/Layout'
 import { SEO } from '../components/seo'
+import 'normalize.css'
 import { Scene } from '../components/ThreeJS/Scene'
 import { animated, config, useSpring } from 'react-spring'
-const Trail = loadable(() => import('../components/Animations/Trail'))
+import { Title } from '../components/Core/Title/Title'
 
+const Trail = loadable(() => import('../components/Animations/Trail'))
 interface Props {
   data: {
     site: {
@@ -37,14 +39,13 @@ const IndexPage: React.FC<Props> = ({ data }) => {
       <SEO title="Home" />
       <section className="landing-hero">
         <Trail title={`Hi, I'm ${data.site.siteMetadata.author}`} />
+        <Title>Test</Title>
 
         <animated.div style={props as any}>
           <p className="description">{data.site.siteMetadata.description}</p>
         </animated.div>
       </section>
-      <div className="canvas">
-        <Scene />
-      </div>
+      <div className="canvas">{/* <Scene /> */}</div>
     </Layout>
   )
 }

@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
     title: `Brian Bawuah, CMD student & developer`,
@@ -41,7 +43,9 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {
-          families: ['Gilroy-ExtraBold'],
+          families: [
+            'horizon, horizon-outlined, HelveticaNeue-regular, HelveticaNeue-light, HelveticaNeue-medium, HelveticaNeue-thin'
+          ],
           urls: ['myfonts.css']
         }
       }
@@ -62,9 +66,17 @@ module.exports = {
           `gatsby-remark-copy-linked-files`
         ]
       }
+    },
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        resolveModules: [path.join(__dirname, 'styles')],
+        utils: path.join(
+          __dirname,
+          'styles/variables',
+          'styles/variables/functions'
+        )
+      }
     }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ]
 }

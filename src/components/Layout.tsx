@@ -7,10 +7,9 @@
 
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import 'normalize.css'
-import './layout.scss'
-import { Header } from './Header/Header'
-import { Footer } from './Footer/Footer'
+import '../styles/style.scss'
+import { Header } from './Core/Header/Header'
+import { Footer } from './Core/Footer/Footer'
 
 export enum Display {
   flex = 'flex',
@@ -34,7 +33,6 @@ export const Layout: React.FC<Props> = ({ children, display }) => {
 
   return (
     <div className="container">
-      <Header siteTitle={data.site.siteMetadata.title} />
       <main
         style={{
           display,
@@ -43,8 +41,6 @@ export const Layout: React.FC<Props> = ({ children, display }) => {
       >
         {children}
       </main>
-
-      <Footer />
     </div>
   )
 }

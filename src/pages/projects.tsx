@@ -2,7 +2,7 @@ import React from 'react'
 import Layout, { Display } from '../components/Layout'
 import loadable from '@loadable/component'
 const PostListItem = loadable(() =>
-  import('../components/PostListItem/PostListItem')
+  import('../components/Core/PostListItem/PostListItem')
 )
 import { SEO } from '../components/seo'
 
