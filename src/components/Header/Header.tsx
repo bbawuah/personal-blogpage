@@ -1,10 +1,6 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import {
-  useStaticQuery,
-  graphql,
-  Link
-} from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 
 interface Props {
   siteTitle: string
@@ -14,9 +10,7 @@ export const Header: React.FC<Props> = () => {
   const data = useStaticQuery(graphql`
     query {
       headerImage: file(
-        relativePath: {
-          eq: "images/portrait-brian-bawuah.jpg"
-        }
+        relativePath: { eq: "images/portrait-brian-bawuah.jpg" }
       ) {
         childImageSharp {
           fluid(maxWidth: 900) {
@@ -40,10 +34,7 @@ export const Header: React.FC<Props> = () => {
             borderRadius: '50%',
             margin: '1rem'
           }}
-          fluid={
-            data.headerImage
-              .childImageSharp.fluid
-          }
+          fluid={data.headerImage.childImageSharp.fluid}
         />
       </Link>
 
@@ -52,12 +43,12 @@ export const Header: React.FC<Props> = () => {
           <Link to="/projects">
             <li>Projects</li>
           </Link>
-          <Link to="/blog">
+          {/* <Link to="/blog">
             <li>Blog</li>
-          </Link>
-          <Link to="/contact">
+          </Link> */}
+          {/* <Link to="/contact">
             <li>Contact</li>
-          </Link>
+          </Link> */}
         </ul>
       </nav>
     </header>

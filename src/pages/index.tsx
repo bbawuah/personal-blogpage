@@ -33,7 +33,7 @@ const IndexPage: React.FC<Props> = ({ data }) => {
   })
 
   return (
-    <Layout display={Display.flex}>
+    <Layout display={Display.flex} justifyContent={'spaceBetween'}>
       <SEO title="Home" />
       <section className="landing-hero">
         <Trail title={`Hi, I'm ${data.site.siteMetadata.author}`} />

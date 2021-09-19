@@ -1,7 +1,7 @@
 ---
 title: 'KNMI project'
 date: '2021-01-20'
-type: 'project'
+type: 'blog'
 ---
 
 This assignment is about creating an interactive insight into cause and effect, so that policymakers and the general public better understand how changing collective behavior can reduce air pollution. To be able to research and visualize this, we need data. We get this data from a satellite instrument, the Tropomi, which looks at the atmosphere of our earth with the best cameras available. We will use this data to make comparisons that are of interest to the target group. Future measures can be mapped out from these comparisons.

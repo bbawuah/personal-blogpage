@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 
 interface Props {
@@ -9,6 +9,7 @@ interface Props {
       timeToRead: number
       frontmatter: {
         title: string
+        assignment: string
         date: string
       }
     }
@@ -16,13 +17,54 @@ interface Props {
 }
 
 const BlogPost: React.FC<Props> = ({ data }) => {
+  const baseUrl = data.markdownRemark.frontmatter.assignment
+
   return (
-    <Layout>
-      <section className="blog-contact-container">
+    <Layout justifyContent={'start'}>
+      <div className="blog-navigation">
+        <nav>
+          <ul>
+            <Link
+              to={`/${baseUrl}/intro`}
+              activeClassName={'blog-navigation-active'}
+            >
+              <li>Intro</li>
+            </Link>
+
+            <Link
+              to={`/${baseUrl}/concepting`}
+              activeClassName={'blog-navigation-active'}
+            >
+              <li>XR Concepting & Design</li>
+            </Link>
+
+            <Link
+              to={`/${baseUrl}/assets`}
+              activeClassName={'blog-navigation-active'}
+            >
+              <li>XR Assets</li>
+            </Link>
+
+            <Link
+              to={`/${baseUrl}/development`}
+              activeClassName={'blog-navigation-active'}
+            >
+              <li>XR Development</li>
+            </Link>
+
+            <Link
+              to={`/${baseUrl}/testing`}
+              activeClassName={'blog-navigation-active'}
+            >
+              <li>XR Testing</li>
+            </Link>
+          </ul>
+        </nav>
+      </div>
+      <section className="blog-content-container">
         <div>
           <h2>{data.markdownRemark.frontmatter.title}</h2>
           <h4>{data.markdownRemark.frontmatter.date}</h4>
-          <p>{`It will probably take you ${data.markdownRemark.timeToRead} minutes to read this.`}</p>
           <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
         </div>
       </section>
@@ -37,6 +79,7 @@ export const query = graphql`
       timeToRead
       frontmatter {
         title
+        assignment
         date(formatString: "DD MMMM, YYYY")
       }
     }

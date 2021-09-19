@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Brian Bawuah, CMD student & developer`,
-    description: `I am a creative developer who creates things in TypeScript with Node and React`,
+    description: `A creative engineer and designer who loves to create immersive experiences`,
     author: `Brian Bawuah`,
     image: `portrait-brian-bawuah.jpg`
   },

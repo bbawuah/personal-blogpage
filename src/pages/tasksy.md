@@ -1,7 +1,7 @@
 ---
 title: 'Tasksy'
 date: '2020-07-02'
-type: 'project'
+type: 'blog'
 ---
 
 A task management tool for achievers

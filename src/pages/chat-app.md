@@ -1,7 +1,7 @@
 ---
 title: 'Chat app'
 date: '2019-11-03'
-type: 'project'
+type: 'blog'
 ---
 
 With this chat application users can communicate with each other in rooms.

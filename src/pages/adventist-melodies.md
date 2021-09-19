@@ -1,7 +1,7 @@
 ---
 title: 'Adventist Melodies'
 date: '2020-12-03'
-type: 'project'
+type: 'blog'
 ---
 
 For the last few months, I have been working on an application that allows users to sing their favourite hymns. In this article I'll talk a little bit about the code I wrote for this app.

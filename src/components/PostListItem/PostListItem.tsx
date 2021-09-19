@@ -33,7 +33,9 @@ const PostListItem: React.FC = () => {
     query PostQuery {
       allMarkdownRemark(
         sort: { fields: [frontmatter___date], order: DESC }
-        filter: { frontmatter: { type: { eq: "project" } } }
+        filter: {
+          frontmatter: { type: { eq: "project" }, section: { eq: "intro" } }
+        }
       ) {
         totalCount
         edges {

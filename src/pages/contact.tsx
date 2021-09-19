@@ -9,7 +9,7 @@ const ContactPage: React.FC = () => (
     <SEO title="Contact" />
     <h2>Let's get in contact!</h2>
     <Blockquote quote={'“It goes down in the DM.”'} auth={'Yo Gotti'} />
-    <section className="blog-contact-container">
+    <section className="blog-content-container">
       <Form />
     </section>
   </Layout>
