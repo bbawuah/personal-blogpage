@@ -18,6 +18,7 @@ interface Props {
 
 const BlogPost: React.FC<Props> = ({ data }) => {
   const baseUrl = data.markdownRemark.frontmatter.assignment
+  console.log(data.markdownRemark.frontmatter.assignment)
 
   return (
     <Layout justifyContent={'start'}>

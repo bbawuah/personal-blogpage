@@ -1,7 +1,7 @@
 ---
-title: 'Sprint 1'
-section: intro
-assignment: Project Specialisten net
+title: 'Pressure cooker'
+section: concepting
+assignment: sprint-one
 date: '2021-10-13'
 type: 'project'
 ---

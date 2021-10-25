@@ -13,8 +13,8 @@ const Projects: React.FC = () => (
       <h2>Learning goals</h2>
       <p className="description">
         My end goal for this semester is to create XR experiences on the web
-        using WebGL. Although we are not using Webgl in this minor, there are
-        still alot of things that overlap.
+        using WebGL and WebXR. Although we are not using Webgl in this minor,
+        there are still alot of things that overlap.
       </p>
       <ul>
         <li>

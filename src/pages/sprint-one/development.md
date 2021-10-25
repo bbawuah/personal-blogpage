@@ -1,7 +1,7 @@
 ---
 title: 'Pressure cooker'
 section: development
-assignment: vr-intro-week
+assignment: sprint-one
 date: '2021-09-17'
 type: 'project'
 ---
