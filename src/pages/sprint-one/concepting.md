@@ -1,5 +1,5 @@
 ---
-title: 'Pressure cooker'
+title: 'Sprint 1'
 section: concepting
 assignment: sprint-one
 date: '2021-10-13'

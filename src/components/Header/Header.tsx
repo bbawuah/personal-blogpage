@@ -41,7 +41,7 @@ export const Header: React.FC<Props> = () => {
       <nav>
         <ul>
           <Link to="/projects">
-            <li>Projects</li>
+            <li>Progress</li>
           </Link>
           {/* <Link to="/blog">
             <li>Blog</li>

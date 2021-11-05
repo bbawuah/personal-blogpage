@@ -1,5 +1,5 @@
 ---
-title: 'Assets'
+title: 'Sprint 1'
 section: assets
 assignment: sprint-one
 date: '2021-09-17'

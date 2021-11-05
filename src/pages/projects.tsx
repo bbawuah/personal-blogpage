@@ -31,9 +31,7 @@ const Projects: React.FC = () => (
         </li>
       </ul>
       <h2>Projects</h2>
-      <p className="description">
-        Here you can find a list of projects that I have worked on.
-      </p>
+      <p className="description">Here you can read about my progress</p>
       <div className="test">
         <PostListItem />
       </div>
