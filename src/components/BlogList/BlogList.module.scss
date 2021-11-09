@@ -5,7 +5,7 @@
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 5px;
-    background-color: #f3f4f6;
+    background-color: #fff;
     box-shadow: 0px 0px 15px 1px rgba(117, 117, 117, 0.25);
     transition: 0.2s ease-out;
 
@@ -32,6 +32,6 @@
   }
 
   .listItem:hover {
-    background-color: darken($color: #f3f4f6, $amount: 3%);
+    background-color: darken($color: #fff, $amount: 3%);
   }
 }

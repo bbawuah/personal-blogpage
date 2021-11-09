@@ -77,7 +77,7 @@ export const Scene: React.FC<MeshProps> = () => {
         shadow-mapSize-height={1024}
         shadow-bias={-0.0001}
       />
-      <fog attach="fog" args={['#e5e7eb', 5, 15]} />
+      <fog attach="fog" args={['#fff', 5, 15]} />
       <Controls />
       <SpinningBox
         position={[3, 1.25, 0]}
