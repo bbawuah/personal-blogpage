@@ -42,9 +42,9 @@ const IndexPage: React.FC<Props> = ({ data }) => {
           <p className="description">{data.site.siteMetadata.description}</p>
         </animated.div>
       </section>
-      <div className="canvas">
+      {/* <div className="canvas">
         <Scene />
-      </div>
+      </div> */}
     </Layout>
   )
 }

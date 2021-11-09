@@ -46,7 +46,7 @@ export const Layout: React.FC<Props> = ({
 
   return (
     <div className={classes}>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <main
         style={{
           display,
@@ -56,7 +56,7 @@ export const Layout: React.FC<Props> = ({
         {children}
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
