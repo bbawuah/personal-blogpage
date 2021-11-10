@@ -32,4 +32,6 @@ The environment will be an museum. I chose this environment because people usual
 
 <p>To challenge myself, I started the concepting for this side project as well. I wanted to implement the things that I was learning in the minor on a side-project that I am very passionate about.</p>
 
-![Certified Gallery](../../utils/assets/certified-gallery.png)
+By the way, this is the final result of my personal project. All mechanics, models and shaders are made by me. It is a good showcase of all my learning goals in one project! <a href="https://www.thenext.gallery/" target="_blank">Click here</a>
+
+![The Next Gallery](../../utils/assets/Poster.png)

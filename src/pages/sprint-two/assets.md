@@ -32,7 +32,28 @@ I created the leaves with Icospheres and added some randomness to the faces and 
 
 <h3>Rocks</h3>
 
-The
+I created some rocks for our environment. I used a cool option called "Bisect" to create random cuts on a cube.
+
+I started of with a cube.
+![Cube](../../utils/assets/cube.png)
+
+I went into edit mode and searched for the bisect option.
+
+![Cube](../../utils/assets/bisect.png)
+
+When you want to use the bisect option, it is important to select everything from the mesh you are trying to edit.
+
+When you select the bisect option, a menu with some options will appear. I selected clear outer and fill to get the result I wanted.
+
+![Cube](../../utils/assets/bisect-options.png)
+
+This is how it will after I made my first cut. I continued this process several times to get the result that I liked.
+
+![Cube](../../utils/assets/bisect-result.png)
+
+I made a few pretty decent rocks this way with different scaling.
+
+![Cube](../../utils/assets/final-result-bisect.png)
 
 <h3>Environments</h3>
 

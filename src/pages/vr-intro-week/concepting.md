@@ -29,4 +29,4 @@ For my individual project I came up with the idea to create a basketball game. T
 
 <p>To challenge myself, I started the concepting for this side project as well. I wanted to implement the things that I was learning in the minor on a side-project that I am very passionate about.</p>
 
-![Certified Gallery](../../utils/assets/certified-gallery.png)
+![The Next Gallery](../../utils/assets/Poster.png)
