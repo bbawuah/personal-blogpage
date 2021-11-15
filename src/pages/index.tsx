@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import loadable from '@loadable/component'
 import { graphql } from 'gatsby'
 import Layout, { Display } from '../components/Layout'
 import { SEO } from '../components/seo'
 import { Scene } from '../components/ThreeJS/Scene'
 import { animated, config, useSpring } from 'react-spring'
-const Trail = loadable(() => import('../components/Animations/Trail'))
+
+const ScrollContainer = loadable(() =>
+  import('../components/Page-one/ScrollContainer/ScrollContainer')
+)
 
 interface Props {
   data: {
@@ -19,6 +22,8 @@ interface Props {
 }
 
 const IndexPage: React.FC<Props> = ({ data }) => {
+  const scrollRef = useRef<HTMLDivElement | null>(null)
+
   const props = useSpring({
     config: config.stiff,
     delay: 750,
@@ -33,18 +38,9 @@ const IndexPage: React.FC<Props> = ({ data }) => {
   })
 
   return (
-    <Layout display={Display.flex} justifyContent={'spaceBetween'}>
+    <Layout>
       <SEO title="Home" />
-      <section className="landing-hero">
-        <Trail title={`Hi, I'm ${data.site.siteMetadata.author}`} />
-
-        <animated.div style={props as any}>
-          <p className="description">{data.site.siteMetadata.description}</p>
-        </animated.div>
-      </section>
-      {/* <div className="canvas">
-        <Scene />
-      </div> */}
+      <ScrollContainer />
     </Layout>
   )
 }

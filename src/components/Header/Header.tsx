@@ -1,7 +1,6 @@
 import React from 'react'
-import Img from 'gatsby-image'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-
+import styles from './Header.module.scss'
 interface Props {
   siteTitle: string
 }
@@ -22,21 +21,12 @@ export const Header: React.FC<Props> = () => {
   `)
 
   return (
-    <header
-      style={{
-        marginBottom: `1.45rem`
-      }}
-    >
+    <header className={styles.container}>
       <Link to="/">
-        <Img
-          style={{
-            width: 50,
-            borderRadius: '50%',
-            margin: '1rem'
-          }}
-          fluid={data.headerImage.childImageSharp.fluid}
-        />
+        <h1>Brian Bawuah</h1>
       </Link>
+
+      <p className={styles.timep}>23:55PM, NL AMSTERDAM</p>
 
       <nav>
         <ul>

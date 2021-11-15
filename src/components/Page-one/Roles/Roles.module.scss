@@ -1,0 +1,24 @@
+.container {
+  height: 100vh;
+  background-color: #fbf5e4;
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+
+    .roles {
+      font-size: 110px;
+      font-style: normal;
+      font-weight: 300;
+      letter-spacing: -0.05em;
+
+      &:first-of-type {
+        border-bottom: 1px solid #000;
+      }
+
+      &:last-of-type {
+        border-bottom: 1px solid #000;
+      }
+    }
+  }
+}

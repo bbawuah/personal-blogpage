@@ -41,8 +41,8 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {
-          families: ['Gilroy-ExtraBold'],
-          urls: ['myfonts.css']
+          families: ['Inter'],
+          urls: ['./Inter/inter.css']
         }
       }
     },

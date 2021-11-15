@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import 'normalize.css'
 import './layout.scss'
 import { Header } from './Header/Header'
-import { Footer } from './Footer/Footer'
+import { Footer } from './Form/Footer/Footer'
 import classNames from 'classnames'
 import styles from './Layout.module.scss'
 
@@ -46,7 +46,7 @@ export const Layout: React.FC<Props> = ({
 
   return (
     <div className={classes}>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <Header siteTitle={data.site.siteMetadata.title} />
       <main
         style={{
           display,

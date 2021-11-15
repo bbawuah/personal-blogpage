@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  position: fixed;
+  height: 65px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  padding: 0 50px;
+  background-color: #faf9f9;
+  // z-index: 999;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+    }
+  }
+}
