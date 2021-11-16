@@ -7,9 +7,37 @@ export const Roles: React.FC<Props> = (props) => {
   return (
     <section className={styles.container} data-scroll-section={true}>
       <section className={styles.contentContainer}>
-        <p className={styles.roles}>Some Text</p>
-        <p className={styles.roles}>Some Text</p>
-        <p className={styles.roles}>Some Text</p>
+        <div className={styles.rolesContainer}>
+          <p
+            className={styles.roles}
+            data-scroll={true}
+            data-scroll-direction={'horizontal'}
+            data-scroll-speed="1.45"
+          >
+            UI/UX - DEVELOPMENT{' '}
+          </p>
+        </div>
+        <div className={styles.rolesContainer}>
+          <p
+            className={styles.roles}
+            data-scroll-speed="2.75"
+            data-scroll={true}
+            data-scroll-direction={'horizontal'}
+          >
+            CLEAN & MINIMALISTIC DESIGN
+          </p>
+        </div>
+
+        <div className={styles.rolesContainer}>
+          <p
+            className={styles.roles}
+            data-scroll-speed="2"
+            data-scroll={true}
+            data-scroll-direction={'horizontal'}
+          >
+            EXCEPTIONAL EXPERIENCES
+          </p>
+        </div>
       </section>
     </section>
   )

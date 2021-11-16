@@ -3,6 +3,7 @@ import LocomotiveScroll from 'locomotive-scroll'
 import styles from './ScrollContainer.module.scss'
 import { Landing } from '../Landing/Landing'
 import { Roles } from '../Roles/Roles'
+import { Projects } from '../Projects/Projects'
 
 const ScrollContainer: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement | null>(null)
@@ -24,6 +25,7 @@ const ScrollContainer: React.FC = () => {
     >
       <Landing title={'Creative Engineer'} />
       <Roles />
+      <Projects />
     </div>
   )
 }

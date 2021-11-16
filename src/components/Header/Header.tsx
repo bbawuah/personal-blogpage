@@ -21,12 +21,12 @@ export const Header: React.FC<Props> = () => {
   `)
 
   return (
-    <header className={styles.container}>
+    <header>
       <Link to="/">
         <h1>Brian Bawuah</h1>
       </Link>
 
-      <p className={styles.timep}>23:55PM, NL AMSTERDAM</p>
+      <p>23:55PM, NL AMSTERDAM</p>
 
       <nav>
         <ul>

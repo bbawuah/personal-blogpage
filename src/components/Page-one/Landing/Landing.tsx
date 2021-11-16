@@ -12,7 +12,7 @@ export const Landing: React.FC<Props> = (props) => {
 
   const data = useStaticQuery(graphql`
     query {
-      landingImage: file(relativePath: { eq: "images/IMG_3069.jpg" }) {
+      landingImage: file(relativePath: { eq: "images/IMG_3069.png" }) {
         childImageSharp {
           fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid

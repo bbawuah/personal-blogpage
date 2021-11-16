@@ -5,19 +5,18 @@
   justify-content: center;
   align-items: center;
   background-color: #fbf5e4;
+  padding: 50px 0;
 
   .title {
     position: absolute;
     text-align: center;
-    font-size: 145px;
+    font-size: 8rem;
     z-index: 1;
     opacity: 1;
     color: #424242;
   }
 
   .image {
-    position: absolute;
-    top: 12.5%;
-    width: 35%;
+    width: 37.5%;
   }
 }
