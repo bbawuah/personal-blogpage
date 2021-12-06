@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from 'react'
 import loadable from '@loadable/component'
 import { graphql } from 'gatsby'
-import Layout, { Display } from '../components/Layout'
+import Layout from '../components/Layout'
 import { SEO } from '../components/seo'
-import { Scene } from '../components/ThreeJS/Scene'
 import { animated, config, useSpring } from 'react-spring'
 
 const ScrollContainer = loadable(() =>
@@ -22,25 +21,14 @@ interface Props {
 }
 
 const IndexPage: React.FC<Props> = ({ data }) => {
-  const scrollRef = useRef<HTMLDivElement | null>(null)
-
-  const props = useSpring({
-    config: config.stiff,
-    delay: 750,
-    from: {
-      opacity: 0,
-      transform: 'translateY(50px)'
-    },
-    to: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    }
-  })
-
   return (
     <Layout>
       <SEO title="Home" />
-      <ScrollContainer />
+      <ScrollContainer
+        data={{
+          role: data.site.siteMetadata.description
+        }}
+      />
     </Layout>
   )
 }

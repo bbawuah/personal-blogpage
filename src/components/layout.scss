@@ -393,7 +393,7 @@ p {
   margin-bottom: 1.45rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 34px;
+  line-height: 1.1;
 }
 figure {
   margin-left: 0;
@@ -724,18 +724,10 @@ header {
   width: 100%;
   border-bottom: 1px solid #000;
   padding: 0 50px;
-  background-color: #fbf5e4;
+  background-color: #fff;
   color: #424242;
   font-size: 15px;
   z-index: 1;
-
-  .time {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 15px;
-    letter-spacing: -0.05em;
-  }
 
   a {
     text-decoration: none;

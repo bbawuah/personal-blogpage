@@ -4,19 +4,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fbf5e4;
-  padding: 50px 0;
+  padding-top: 65px;
 
   .title {
     position: absolute;
     text-align: center;
-    font-size: 8rem;
+    font-size: 10vmax;
     z-index: 1;
     opacity: 1;
     color: #424242;
   }
 
   .image {
-    width: 37.5%;
+    width: 45%;
+  }
+
+  .location {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.75vmax;
+    letter-spacing: -0.05em;
   }
 }

@@ -14,7 +14,7 @@ export const Roles: React.FC<Props> = (props) => {
             data-scroll-direction={'horizontal'}
             data-scroll-speed="1.45"
           >
-            UI/UX - DEVELOPMENT{' '}
+            UI/UX DESIGN - DEVELOPMENT{' '}
           </p>
         </div>
         <div className={styles.rolesContainer}>
@@ -24,7 +24,7 @@ export const Roles: React.FC<Props> = (props) => {
             data-scroll={true}
             data-scroll-direction={'horizontal'}
           >
-            CLEAN & MINIMALISTIC DESIGN
+            CLEAN & MINIMALISTIC APPROACH
           </p>
         </div>
 

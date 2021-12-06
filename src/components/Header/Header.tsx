@@ -26,8 +26,6 @@ export const Header: React.FC<Props> = () => {
         <h1>Brian Bawuah</h1>
       </Link>
 
-      <p>23:55PM, NL AMSTERDAM</p>
-
       <nav>
         <ul>
           <Link to="/projects">

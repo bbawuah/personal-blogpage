@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Brian Bawuah, CMD student & developer`,
-    description: `A creative engineer and designer who loves to create immersive experiences`,
+    description: `Creative Engineer`,
     author: `Brian Bawuah`,
-    image: `portrait-brian-bawuah.jpg`
+    image: `IMG_3069.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
