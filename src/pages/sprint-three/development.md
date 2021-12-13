@@ -12,7 +12,7 @@ In our concept we opted for an assistant that helps the player get started in th
 
 I have researched a way to set up the dialogue system in the most efficient way possible. I came across a youtube tutorial that uses .assets that can have elements. Each element is a piece of text with instructions for the player in our case.
 
-source: [Link ](https://www.youtube.com/playlist?list=PLCGaK2yqfY2IrJYnOnlgdmzWVUFXsRQXA)
+source: [Dialogue tutorial](https://www.youtube.com/playlist?list=PLCGaK2yqfY2IrJYnOnlgdmzWVUFXsRQXA)
 
 We wanted to test what an easy way to guide the user through the dialogue. We chose to have the user click the primary A button to read the next message in the dialogue.
 
@@ -278,13 +278,13 @@ public class TypeWriter : MonoBehaviour
 }
 ```
 
-### Interactie
+### Interaction
 
 The player can click through the dialogue at this point using the triggers.
 
 ![Interaction with controller](../../utils/assets/controller-input.png)
 
-### Conclusie
+### Conclusion
 
 In this way we can easily invoke the dialogue in our Unity project. The dialogue is not only invoked when the player collides through a box, but also on other events such as completing the breathing exercise and completing a minigame. In these cases the dialogue is called in the following way.
 
