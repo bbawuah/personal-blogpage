@@ -55,37 +55,5 @@ I made a few pretty decent rocks this way with different scaling.
 
 ![Cube](../../utils/assets/final-result-bisect.png)
 
-<h3>Environments</h3>
-
-I have been experimenting with creating environments in Blender using sculpting
-
-I started of with an icosphere with 2 subdivisions.
-
-![environment-design](../../utils/assets/icosphere.png)
-
-Next, I went into sculpt mode.
-
-![sculpt mode](../../utils/assets/sculpt-mode.png)
-
-Inside sculpt mode, I turned on dynamic topology. And I edited the detailing to constant detail. This way, the faces that I am changing will always have the same details instead of relative.
-
-![environment-design](../../utils/assets/dyntopo.png)
-
-I changed the resolution to create a low poly effect and also to lower the amount of vertices I make during sculpting.
-
-![environment-design](../../utils/assets/resolution.png)
-
-The final result of the environment looked like this.
-
-![environment-design](../../utils/assets/3d-world.png)
-
-For the water in the environment, I created a plane and positioned so that a few parts would be visible.
-
-![environment-design](../../utils/assets/water.png)
-
-At last I added the threes and rocks that I made to the environment!
-
-![environment-design](../../utils/assets/environment-design1.png)
-
 <h3>Conclusion</h3>
 <p>I have learned a lot of cool new technics that we used in our projects. I am starting to feel more and more comfortable in creating models in Blender!</p>
