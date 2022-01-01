@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Brian Bawuah, CMD student & developer`,
-    description: `I am a CMD student and programmer, who makes things in TypeScript, with Node and React.`,
+    description: `I am a CMD student, designer and programmer, who makes digital experiences on the web.`,
     author: `Brian Bawuah`,
-    image: `portrait-brian-bawuah.jpg`
+    image: `portrait-brian-bawuah.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

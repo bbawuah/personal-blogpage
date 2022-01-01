@@ -10,7 +10,7 @@ export const Header: React.FC<Props> = () => {
   const data = useStaticQuery(graphql`
     query {
       headerImage: file(
-        relativePath: { eq: "images/portrait-brian-bawuah.jpg" }
+        relativePath: { eq: "images/portrait-brian-bawuah.png" }
       ) {
         childImageSharp {
           fluid(maxWidth: 900) {
