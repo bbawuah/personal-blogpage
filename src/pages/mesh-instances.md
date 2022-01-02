@@ -3,18 +3,13 @@ title: 'Reducing draw calls using mesh instances'
 date: '2022-01-02'
 ---
 
-![](../utils/assets/hotzones.png)
-
-
-
-
+![](../images/assets/hotzones.png)
 
 In this article I will explain how I made the hot zones in the [The Next Gallery](https://www.thenext.gallery/).
 
 I wanted to create some hot zones in the gallery. But I thought it would be unnecessary to create a mesh for every creative in the gallery. By instancing the mesh, I would reduce the amount of draw calls a little and that’s always nice.
 
 First I created a new class for the hot zones and added property `dummy` which is a 3D object which we will use later.
-
 
 ```tsx
 import * as THREE from 'three'
@@ -29,7 +24,6 @@ export class HotZones {
 ```
 
 Next up, I created the cylinderGeometry geometry.
-
 
 ```tsx
 import * as THREE from 'three'
@@ -46,7 +40,6 @@ export class HotZones {
 ```
 
 For the material, I used a shader material to give my hot zone a little custom look. Because I want to use an instanced mesh, I need to use the `attribute mat4 instanceMatrix` to target the instances in my shader. You can read more about this on this [page](https://threejs.org/docs/#api/en/renderers/webgl/WebGLProgram).
-
 
 ```tsx
 import * as THREE from 'three'
@@ -97,9 +90,7 @@ export class HotZones {
 }
 ```
 
-
 Now I can create the instanced mesh. The `THREE.InstancedMesh` class expects a geometry, a material and a count that tells three-js how many instances I need.
-
 
 ```tsx
 import * as THREE from 'three'
@@ -123,7 +114,6 @@ export class HotZones {
 ```
 
 Now I created the instanced meshes. They still need to be added to the scene however. I added a parameter for the scene to the constructor of this class and added the mesh to the scene.
-
 
 ```tsx
 import * as THREE from 'three'
@@ -149,12 +139,9 @@ export class HotZones {
 
 Now the mesh is added to our scene. But they all have the same position. I wanted the hot zones to have different coordinated. This is where the dummy comes into play.
 
-
 The array `creatives` contains coordinates for every creative in the scene. I looped over every creative in this array and copied the coordinates of the creative, to the coordinates of the dummy.
 
-
 After this I updated the matrix of the dummy and set a new matrix for a mesh instance.
-
 
 ```tsx
 import * as THREE from 'three'
