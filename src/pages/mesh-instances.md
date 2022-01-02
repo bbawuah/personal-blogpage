@@ -3,7 +3,7 @@ title: 'Reducing draw calls using mesh instances'
 date: '2022-01-02'
 ---
 
-![](../images/assets/hotzones.png)
+![hotzones](../utils/assets/hotzones.png)
 
 In this article I will explain how I made the hot zones in the [The Next Gallery](https://www.thenext.gallery/).
 
