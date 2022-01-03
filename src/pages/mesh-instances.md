@@ -9,7 +9,7 @@ In this article I will explain how I made the hot zones in the [The Next Gallery
 
 I wanted to create some hot zones in the gallery. But I thought it would be unnecessary to create a mesh for every creative in the gallery. By instancing the mesh, I would reduce the amount of draw calls a little and that’s always nice.
 
-First I created a new class for the hot zones and added property `dummy` which is a 3D object which we will use later.
+First I created a new class for the hot zones and added property `dummy` which is a 3D object which I will use later.
 
 ```tsx
 import * as THREE from 'three'
