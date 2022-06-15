@@ -6,6 +6,14 @@ export const Projects: React.FC = () => (
   <div className={projectsListStyle.list}>
     <h4>Some of my projects</h4>
     <ProjectListItem
+      url={'https://coritas-dream.herokuapp.com/'}
+      cls={projectsListStyle.listItem}
+      title={"Corita's dream"}
+      desc={
+        'An immersive social experience that puts a magnifying glass on the ideals of Corita Kent.'
+      }
+    />
+    <ProjectListItem
       url={'https://www.thenext.gallery/'}
       cls={projectsListStyle.listItem}
       title={'The Next Gallery'}
